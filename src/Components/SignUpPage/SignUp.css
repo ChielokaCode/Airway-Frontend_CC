@@ -1,0 +1,207 @@
+
+.signup-container-signup{
+    max-width: 100%;
+    margin: 0;
+    margin-top: -6rem;
+}
+
+.grid-container-signup{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+
+}
+.img5-signup{
+    background-image: url("../src/assets/user_reg_pic.svg");
+    width: 840px;
+    height: 1024px;
+    max-width: 50%;
+}
+
+.grid-item-signup-signup{
+    display: inline-flex;
+    height: 1024px;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    margin-top: 80rem;
+    margin-bottom: auto;
+    margin-left: 20rem;
+    padding: 0 30px;
+}
+.form-table-signup-signup{
+    width: 450px;
+}
+
+.top-form-signups{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.google-button{
+
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+}
+.googe-text{
+    color: #98A2B3;
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+#img6{
+    width: 24px;
+    height: 24px;
+}
+
+
+.form-proper-signups{
+    width: 450px;
+    height: 750px;
+    margin-top: -1rem;
+
+}
+.google-button-signup{
+    align-content: center;
+    background-color: white;
+    margin-left: 7rem;
+}
+
+
+.SQ-text-signup{
+    margin-top: 2rem;
+    color: #2F2E41;
+    font-family: Lato, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+}
+.createAcct-text-signups{
+    margin-top: -0.1rem;
+    color:  #101828;
+    font-family: Lato, serif;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.label{
+    color: #000;
+    font-family: Lato, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+}
+.input-fields{
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    font-family: Lato, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+    color: black;
+}
+.single-input-field{
+    margin-top: -20rem;
+    margin-bottom: -20rem;
+}
+
+.button-cta{
+    margin-top: 5px;
+    display: flex;
+    width: 450px;
+    height: 44px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #6C63FF;
+
+    color: #FFF;
+
+    /* Button Semi Bold - 14 */
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.alreadyHaveAnAcct{
+    margin-top: -1rem;
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.alreadyHaveAnAcct > span{
+    color: #6C63FF;
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+.email-sent-img{
+    width: 150px;
+    height: 131.818px;
+}
+
+.modal-design{
+    width: 491px;
+    padding: 32px;
+    align-items: center;
+    gap: 24px;
+    border-radius: 16px;
+    background: #FFF;
+}
+.modal-body{
+    display: flex;
+    gap: 10px;
+    color: #6C63FF;
+    font-family: Lato, serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 32.2px */
+    letter-spacing: 0.15px;
+}
+.modal-close{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #6C63FF;
+    width: 427px;
+    height: 46px;
+    color: white;
+}

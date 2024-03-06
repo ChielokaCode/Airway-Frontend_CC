@@ -1,0 +1,139 @@
+.blueplain-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0056b3;
+  }
+
+  .blueplain-content h3 {
+    color: white;
+  }
+  
+  .close {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: auto;
+    border-color: white;
+  }
+  
+  .close:hover {
+    background-color: #003f7f;
+  }
+  
+  .departurespace {
+    display: flex;
+    align-items: center;
+  }
+  
+  .departurespace img {
+    margin-right: 10px; 
+  }
+  
+  .departurespace h2 {
+    margin: 0; 
+  }
+  
+  .departurespace h4 {
+    margin-left: auto; 
+  }
+  
+  .parentContainer {
+    display: flex;
+  }
+  
+  .singleReference {
+    text-align: right;
+  }
+  
+  .departureDetails {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+  .departureDetails h4 {
+    margin: 5px 0; 
+  }
+  .arrivalDetails {
+    display: flex;
+      flex-direction: column; 
+      align-items: flex-start;
+  }
+  .arrivalDetails h4 {
+    margin: 5px 0; 
+  }
+  .departureArrivalSeparator {
+    border-top: 1px solid black; 
+    width: 100%;
+  }
+  .realArrival {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  .realArrivalSeparator {
+    border-top: 1px solid black; 
+    width: 100%;
+  }
+  .planeArrival {
+  display: flex;
+    
+  }
+  .departureDetails {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+  
+  .newArrival {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+  
+  .newArrival h4 {
+    margin: 5px 0; 
+    
+  }
+  .newArrivalSeparator {
+    border-top: 1px solid black; 
+    width: 100%;
+  }
+  .latestArrival {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+  .latestArrival h4 {
+    margin: 5px 0; 
+  }
+  .latestArrivalSeparator {
+    border-top: 1px solid black; 
+    width: 100%;
+  }
+  .anotherArrival {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  .grid-container-modalsum {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: min-content; 
+    gap: 30px; 
+    justify-content: center;
+  }
+  
+  .grid-item-modalsum {
+    display: flex;
+    align-items: center;
+  }
+  .grid-item-modalsum h4 {
+    margin: 0; 
+  }
+  
+  
+  

@@ -1,0 +1,125 @@
+.main-airway-body {
+    background-color: #f8f9fa;
+  }
+
+  .main-container-header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .flightImgAndAirway {
+    display: flex;
+    align-items: center;
+  }
+
+  .flightImgAndAirway img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .airwayText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .flightInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .flightInfo img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .flightSelectionStatus {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo-img-infoHeader{
+    width: 100px;
+    height: 100px;
+    margin-top: -1rem;
+  }
+
+
+  .flightSelectionStatus button {
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px
+  }
+
+
+  .flightSelectionStatus button:hover {
+    background-color: #0056b3;
+  }
+
+  .homeAboutSign {
+    display: flex;
+    align-items: center;
+  }
+
+  .homeAbout {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .homeAbout a,
+  .aboutAir a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .signUp {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+  }
+
+
+  .homeAbout a:hover,
+  .aboutAir a:hover {
+    text-decoration: underline;
+  }
+
+
+  .signUp:hover {
+    background-color: #0056b3;
+  }
+  .flightSelectionStatus label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+    background-color: #007bff;
+  }
+
+  .flightSelectionStatus label:first-child::before {
+    display: none;
+  }
+
+
