@@ -1,5 +1,5 @@
 {
-  "name": "airway-frontend-cc",
+  "name": "airway-api-frontend-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,26 +10,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-oauth/google": "^0.12.1",
+    "@syncfusion/ej2-navigations": "^25.1.35",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
-    "cors": "^2.8.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
-    "react-datepicker": "^6.2.0",
+    "react-collapsible": "^2.10.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1"
+    "react-router-dom": "^6.22.1",
+    "react-tabs": "^6.0.2"
   },
   "devDependencies": {
-    "@types/react": "^18.2.55",
+    "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.0"
+    "vite": "^5.1.4"
   }
 }
