@@ -1,11 +1,8 @@
 import React from 'react'
-import SignUp from "../Components/SignUpPage/SignUp.jsx";
 
-const SignUpPage = () => {
+function SignUpPage() {
   return (
-    <div>
-      <SignUp />
-    </div>
+    <div>SignUpPage</div>
   )
 }
 

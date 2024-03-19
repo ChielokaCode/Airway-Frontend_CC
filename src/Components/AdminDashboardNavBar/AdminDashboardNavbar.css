@@ -1,0 +1,97 @@
+.admin-navbar-container{
+    display: flex;
+    position: absolute;
+    width: 1176px;
+    height: 68px;
+    left: 264px;
+    gap: 10px;
+    border: 1px solid #ddf68933;
+    background: #FFFFFF;
+    top: 0px;
+}
+.admin-navbar-search{
+    position: absolute;
+    width: 523px;
+    height: 28px;
+    top: 6px;
+    left: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+    background: white;
+
+}
+.admin-navbar-search-text{
+    position: absolute;
+    width: 510px;
+    height: 28px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: black;
+    top: 10px;
+    left: 15px;
+
+}
+.admin-navbar-filter{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 14px;
+    left: 570px;
+    width: 30px;
+    cursor: pointer;
+}
+.admin-navbar-filter:hover{
+    transform: scale(1.2);
+}
+.navbar-filter-icon{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    top: 10px;
+    left: 5px;
+
+}
+.admin-navbar-logout{
+    display: flex;
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    top: 13px;
+    left: 1025px;
+    gap: 11px;
+    color: #2D9CDB;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.admin-navbar-logout:hover{
+    transform: scale(1.1);
+}
+.admin-navbar-logout:active{
+    border-radius: 5px;
+    border: 1px solid #2D9CDB;
+}
+.navbar-logout-icon{
+    position: relative;
+    width: 16px;
+    height: 19.5px;
+    top: 2.5px;
+    left: 4px;
+}
+.navbar-logout-text{
+    position: relative;
+    width: 57px;
+    height: 21px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}

@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.booking-header{
+    background: #001F3F;
+    width: 1440px;
+    height: 107px;
+    position: absolute;
+    top: 0px;
+}
+.booking-text{
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    width: 318px;
+    height: 28px;
+    top: 40px;
+    left: 574px;
+}
+.booking-hero-first{
+    position: absolute;
+    width: 878px;
+    height: 177px;
+    top: 207px;
+    left: 62px;
+    gap: 33px;
+}
+.booking-hero-first-up{
+    position: absolute;
+    width: 878px;
+    height: 72px;
+    gap: 16px
+}
+.booking-hero-first-up-text-up{
+    position: absolute;
+    width: 450px;
+    height: 28px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.booking-hero-first-up-text-down{
+    position: absolute;
+    width: 878px;
+    height: 28px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00000080;
+    top: 45px;
+}
+.booking-hero-first-down{
+    position: absolute;
+    width: 254px;
+    height: 72px;
+    gap: 16px;
+    top: 100px;
+
+}
+.booking-hero-first-down-text-up{
+    position: absolute;
+    width: 454px;
+    height: 28px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.booking-hero-first-down-text-down{
+    position: relative;
+    width: 136px;
+    height: 28px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00000080;
+    top: 45px;
+}
+
+.booking-hero-second{
+    position: absolute;
+    width: 246px;
+    height: 64px;
+    top: 189px;
+    left: 1102px;
+    gap: 8px;
+}
+.booking-hero-second-text-up{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #000000;
+    position: absolute;
+    text-align: left;
+    width: 248px;
+    height: 28px
+
+}
+.booking-hero-second-text-down{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    position: absolute;
+    text-align: left;
+    top: 37px;
+    left: 80px;
+    width: 73px;
+    height: 28px;
+    color: #00000080;
+
+}
+.booking-table-one{
+    display: flex;
+    width: 1291px;
+    height: 332px;
+    position: absolute;
+    top: 408px;
+    left: 62px;
+    gap: 28px
+}
+.table-one-first{
+    width: 1090px;
+    height: 332px;
+    gap: 16px;
+}
+.booking-table-one-head{
+    background: #2D9CDB;
+    width: 1090px;
+    height: 116px;
+    padding: 22px, 15px, 22px, 15px;
+    border-radius: 5px;
+    gap: 10px;
+}
+.booking-table-one-head-text{
+    position: relative;
+    margin: 0 20px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto auto;
+    width: 1060px;
+    height: 72px;
+    padding: 22px, 0px, 22px, 0px;
+    gap: 87px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    top: 45px;
+}
+.one-head-1{
+    width: 128px;
+    height: 28px
+}
+
+.booking-table-one-body-one{
+    position: relative;
+    border: 2px solid #2D9CDB;
+    width: 1090px;
+    height: 92px;
+    padding: 18px, 22px, 18px, 38px;
+    border-radius: 5px;
+    gap: 10px;
+    top: 20px;
+    text-align: center;
+}
+.booking-table-one-body-one-text{
+    position: relative;
+    margin: 0 20px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto auto;
+    width: 1060px;
+    width: 1018px;
+    height: 56px;
+    gap: 160px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    top: 25px;
+    left: 20px;
+
+}
+
+.booking-table-one-body-two{
+    position: relative;
+    border: 2px solid #2D9CDB;
+    width: 1090px;
+    height: 92px;
+    padding: 21px, 40px, 21px, 40px;
+    border-radius: 5px;
+    gap: 10px;
+    top: 40px;
+}
+.booking-table-one-body-two-text{
+    position: relative;
+    margin: 0 20px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto auto;
+    width: 1016px;
+    height: 50px;
+    gap: 163px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    top: 25px;
+    left: 20px;
+
+}
+.two-body-1{
+    position: relative;
+    width: 72px;
+    height: 28px
+}
+
+.table-one-second{
+    width: 173px;
+    height: 274px;
+    gap: 13px
+
+}
+.table-one-second-top{
+    background:#2D9CDB;
+    width: 173px;
+    height: 116px;
+    padding: 44px, 62px, 44px, 62px;
+    border-radius: 5px;
+    gap: 10px
+
+}
+.table-one-second-top-text{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    position: relative;
+    top: 45px;
+    left: 60px;
+    color:#FFFFFF;
+}
+.table-one-second-middle{
+    background: #001F3F;
+    position: absolute;
+    width: 173px;
+    height: 66px;
+    padding: 19px, 45px, 19px, 45px;
+    border-radius: 5px;
+    top: 130px;
+}
+.table-one-second-middle-text{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    color:#FFFFFF;
+}
+
+.table-one-second-bottom{
+    background: #001F3F;
+    position: absolute;
+    width: 172px;
+    height: 66px;
+    padding: 19px, 50px, 19px, 50px;
+    border-radius: 5px;
+    top: 210px;
+
+}
+.table-one-second-bottom-text{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    position: relative;
+    top: 20px;
+    left: 43px;
+    color:#FFFFFF;
+}
+.pay-button{
+    position: absolute;
+    width: 171px;
+    height: 94px;
+    top: 740px;
+    left: 1180px;
+    padding: 33px, 66px, 33px, 66px;
+    border-radius: 5px;
+    gap: 10px;
+    background: #2D9CDB;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+.pay-button:active{
+    transform: scale(0.92);
+    box-shadow: 2px 2px 5px rgba(0,0,0,2);
+}
+
+.pay-button-text{
+    position: absolute;
+    width: 39px;
+    height: 28px;
+    gap: 6px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    top: 35px;
+    left: 65px;
+
+
+}
+.booking-table-two{
+    position: absolute;
+    width: 1290px;
+    height: 488px;
+    top: 927px;
+    left: 62px;
+    gap: 24px
+}
+.booking-table-two-head{
+    width: 1287px;
+    height: 58px;
+    padding: 15px, 2px, 15px, 10px;
+    border-radius: 5px;
+    gap: 10px;
+    background: #001F3F;
+}
+.booking-table-two-head-text{
+    position: relative;
+    margin: 0 20px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto;
+    width: 1275px;
+    height: 28px;
+    top: 15px;
+    left: 10px;
+    gap: 370px;
+    color: #FFFFFF;
+}
+.booking-table-two-head-text-first{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 70px;
+    height: 28px;
+    color: #FFFFFF;
+}
+.booking-table-two-head-text-middle{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 270px;
+    height: 28px;
+    color: #FFFFFF;
+}
+.booking-table-two-head-text-last{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 180px;
+    height: 28px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+.booking-table-two-body{
+    position: absolute;
+    width: 1290px;
+    height: 406px;
+    top: 80px;
+    gap: 27px
+}
+.booking-table-two-body-box1{
+    width: 1288px;
+    height: 140px;
+    gap: 24px
+}
+.booking-table-two-body-box1-blue{
+    background: #2D9CDB;
+    width: 1288px;
+    height: 88px;
+    padding: 8px, 56px, 8px, 56px;
+    border-radius: 5px;
+    gap: 10px
+}
+.booking-table-two-body-box1-blue-text{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    position: relative;
+    width: 1176px;
+    height: 72px;
+    padding: 22px, 0px, 22px, 0px;
+    gap: 316px;
+    left: 65px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.booking-table-two-body-box1-white{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+    width: 1216px;
+    height: 28px;
+    gap: 293px;
+    left: 35px;
+    top: 25px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.booking-table-two-body-key-value{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    position: relative;
+    width: 1287px;
+    height: 82px;
+    border-radius: 5px;
+    border: 2px;
+    gap: 10px;
+    background: #2D9CDB;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    top: 20px;
+    color: #FFFFFF;
+}
+.booking-table-two-body-key-value-first{
+    position: absolute;
+    width: 155px;
+    height: 28px;
+    top: 27px;
+    left: 39px;
+
+}
+.booking-table-two-body-key-value-second{
+    position: absolute;
+    width: 135px;
+    height: 28px;
+    top: 21px;
+    left: 746px
+
+}
+.booking-table-three{
+    position: absolute;
+    width: 1290px;
+    height: 488px;
+    top: 1404px;
+    left: 75px;
+    gap: 24px;
+
+}
+.booking-table-three-head{
+    background: #001F3F;
+    width: 1289px;
+    height: 58px;
+    padding: 15px, 49px, 15px, 53px;
+    border-radius: 5px;
+    gap: 10px
+}
+
+.booking-table-three-head-text{
+    position: relative;
+    margin: 0 20px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto;
+    width: 1187px;
+    height: 28px;
+    gap: 351px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    top: 15px;
+    left: 40px;
+    color: #FFFFFF;
+}
+.booking-table-three-head-text-first{
+    width: 70px;
+    height: 28px;
+    color: #FFFFFF;
+
+}
+.booking-table-three-head-text-middle{
+    width: 266px;
+    height: 28px;
+    color: #FFFFFF;
+
+}
+.booking-table-three-head-text-last{
+    width: 169px;
+    height: 28px;
+    color: #FFFFFF;
+}
+.booking-table-three-body{
+    position: relative;
+    width: 1290px;
+    height: 406px;
+    gap: 27px;
+    top: 24px;
+}
+.booking-table-three-body-box1{
+    width: 1288px;
+    height: 140px;
+    gap: 24px
+
+}
+.booking-table-three-body-box1-blue{
+    background: #2D9CDB;
+    width: 1288px;
+    height: 88px;
+    padding: 8px, 56px, 8px, 56px;
+    border-radius: 5px;
+    gap: 10px;
+}
+.booking-table-three-body-box1-blue-text{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    position: relative;
+    width: 1176px;
+    height: 72px;
+    padding: 22px, 0px, 22px, 0px;
+    gap: 316px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    left: 55px;
+    color: #FFFFFF;
+}
+
+.booking-table-three-body-box1-white{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+    width: 1216px;
+    height: 28px;
+    gap: 293px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    left: 35px;
+    top: 25px;
+}
+.booking-table-three-body-key-value{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    position: relative;
+    width: 1290px;
+    height: 82px;
+    border-radius: 5px;
+    border: 2px;
+    gap: 10px;
+    background: #2D9CDB;
+    top: 20px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.booking-table-three-body-key-value-first{
+    position: absolute;
+    width: 155px;
+    height: 28px;
+    top: 27px;
+    left: 39px
+}
+.booking-table-three-body-key-value-second{
+    position: absolute;
+    width: 135px;
+    height: 28px;
+    top: 21px;
+    left: 746px;
+}

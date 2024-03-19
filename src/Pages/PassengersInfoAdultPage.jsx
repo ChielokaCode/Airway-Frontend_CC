@@ -1,19 +1,9 @@
 import React from 'react'
-import PassengersInfoHeader from '../Components/PassengersInfoAdultPage/PassengersInfoHeader/PassengersInfoHeader'
-import PassengersInfoLowerTab from '../Components/PassengersInfoAdultPage/PassengersInfoLowerTab/PassengersInfoLowerTab'
-import PassengersInfoMiddleTab from '../Components/PassengersInfoAdultPage/PassengersInfoMiddleTab/PassengersInfoMiddleTab'
 
-
-
-const PassengersInfoAdultPage = () => {
+function PassengersInfoAdultPage() {
   return (
-  <>
-    <div>
-        <PassengersInfoHeader />
-        <PassengersInfoMiddleTab />
-        <PassengersInfoLowerTab />
-    </div>
-    </>
+    <div>PassengersInfoAdultPage</div>
   )
 }
+
 export default PassengersInfoAdultPage

@@ -1,0 +1,13 @@
+
+.FlightInfoPage {
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 650px;
+  top: 5143px;
+  gap: 64px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 20px auto;
+  font-family: 'Lato', sans-serif;
+}

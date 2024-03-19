@@ -1,0 +1,1268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+
+/*header*/
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:1px;
+    left:0px;
+    width: 1300px;
+    height: 79px;
+    padding: 4px 77px 5px 73px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.airwayText{
+    width: 63px;
+    height: 18px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+
+.flightInfo{
+    width: 331px;
+    height: 52px;
+    display: grid;
+}
+
+.flightInfo{
+    width: 331px;
+    height: 52px;
+    display: grid;
+}
+
+.flightInfo img {
+    width: 330px;
+    height: 24px;
+}
+
+.flightSelectionStatus{
+    width: 331px;
+    height: 28px;
+    gap: 10px;
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+
+.flight-selection{
+    width: 89px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #001F3F;
+}
+
+
+.confirmation{
+    width: 75px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #001F3F;
+}
+
+.payment{
+    width: 50px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #001F3F;
+}
+
+.passenger-info{
+    width: 84px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #001F3F;
+}
+
+
+.homeAboutSign{
+    width: 270px;
+    height: 48px;
+    gap: 15px;
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+
+.homeAbout{
+    width: 130px;
+    height: 28px;
+    gap: 13px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin-top: 8px;
+}
+
+.homeAboutSign button {
+    width: 127px;
+    height: 48px;
+    gap: 16px;
+    margin-top: 1px;
+
+}
+
+.aboutUsheader{
+    width: 64px;
+    height: 28px;
+    color: #001F3F;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+.homeHeader {
+    width: 43px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #001F3F;
+}
+
+.signUp{
+    width: 127px;
+    height: 48px;
+    border-radius: 4px;
+    gap: 10px;
+    color: white;
+    background-color: #2D9CDB;
+}
+
+
+/*hero*/
+
+
+
+.airway-hero-body {
+    width: 1070px;
+    height: 125px;
+    position:absolute;
+    top: 100px;
+    left: 130px;
+    gap: 320px;
+    background-color: #001F3F;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: start;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+
+.searchAndRoute{
+    width: 600px;
+    height: 69px;
+    gap: 16px;
+    background-color: #001F3F;
+    display: flex;
+    margin-left: 10px;
+}
+
+.searchAirway{
+    width: 160px;
+    height: 69px;
+    padding: 16px 50px 10px 24px;
+    border-radius: 10px;
+    gap: 3px;
+    border: 2px solid #FFFFFF;
+    margin-top: 1px;
+    margin-left: 10px;
+    background-color: #001F3F;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+
+}
+
+.searchAirway img{
+    width: 18px;
+    height: 22px;
+    padding: 3px;
+    left: 18px;
+    background-color: #001F3F;
+}
+
+.searchAirway span{
+    width: 54px;
+    height: 22px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: center;
+    color: white;
+    margin-left: -6px;
+    margin-top: 3px;
+}
+
+.datePassengerTrip {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.routeDatePassengerTrip{
+    width: 458px;
+    height: 64px;
+    display: grid;
+    gap: 8px;
+}
+
+.airwayRoute{
+    color: white;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.priceAirway{
+    width: 111px;
+    height: 72px;
+    gap: 16px;
+    display: grid;
+    color: white;
+    background-color: #001F3F;
+}
+
+.totalPrice{
+    width: 111px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+
+.price{
+    width: 50px;
+    height: 28px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/*arrival*/
+
+.offering-main-div-arrival{
+    display: grid;
+    background-color: white;
+    border: 2px transparent ;
+    border-radius: 10px;
+    position: absolute;
+    width: 1276.25px;
+    height: 105px;
+    top: 1390px;
+    gap: 60px;
+    left: 50px;
+}
+
+
+.departFlightAndImg{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    background-color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    width: 500.25px;
+    height: 50px;
+    top: -70px;
+    left: 110px;
+
+}
+
+
+.departFlightAndImg img{
+    width: 24px;
+    height: 24px;
+    margin-top: 20px;
+    margin-right: 1200px;
+    background-color: white;
+}
+
+
+.departFlightAndImg span {
+    color: #000000;
+    background-color: white;
+    margin-top: 17px;
+    width: 213px;
+    height: 28px;
+    position: absolute;
+    left: 30px;
+    font-family: 'Lato';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.dateAndPrice-arrival img {
+    width: 60px;
+    height: 18.5px;
+    margin-top:  50px;
+    background-color: white;
+    margin-left: 45px;
+}
+
+
+.dateAndPrice-arrival{
+    position: absolute;
+    top: 50px;
+    display: flex;
+    width: 1223px;
+    height: 142.18px;
+    gap: 910px;
+    margin-left: 30px ;
+    background-color: white;
+}
+
+
+
+.firstflightClassBody-arrival1{
+    background-color: white;
+    width: 550px;
+    height: 60px;
+    left: 385px;
+    position: absolute;
+    top:30px;
+    gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: white solid;
+}
+
+
+.flightDepartureInformation-arrival{
+    width: 950px;
+    height: 326px;
+    gap: 16px;
+    background-color: white;
+    border: 2px transparent;
+    border-radius: 10px;
+    left: 145px;
+    position: absolute;
+    top: 250px;
+}
+
+
+.flightDepartureInformation2-arrival{
+    gap: 16px;
+    background-color: black;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 60px;
+    position: absolute;
+    top: 700px;
+}
+
+
+.flightClassInfo-arrival1{
+    position: absolute;
+    left: -2px;
+    top: 30px;
+    display: flex;
+    background-color: #001F3F;
+    width: 130px;
+    height: 40px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    padding: 19px 43px 0px 100px;
+}
+
+
+.numberOfFlights-arrival{
+    postion: absolute;
+    top: 2px;
+    text-align: left;
+    background-color: white;
+}
+
+
+.firstflightInfo2-arrival{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    width: 944px;
+    height: 60px;
+    background-color: white;
+}
+
+
+.flightClassInfo2-arrival{
+    position: absolute;
+    top:1px;
+    left: -2px;
+    display: flex;
+    background-color: #001F3F;
+    width: 210px;
+    height: 40px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    padding: 19px 43px 0px 100px;
+}
+
+
+
+.arrivalFlightInfo-arrival1{
+    width: 230px;
+    height: 100px;
+    gap: 8px;
+    display: grid;
+    background-color: white;
+    position:absolute;
+    left: 18px;
+    top: 202px;
+}
+
+
+.arrivalFlightInfo{
+    width: 230px;
+    height: 110px;
+    gap: 8px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: start;
+    background-color: white;
+    position:absolute;
+    left: 18px;
+    top: 150px;
+}
+
+
+.flightDepartureInformation2-arrival{
+    width: 950px;
+    height: 270px;
+    gap: 16px;
+    background-color: white;
+    border: 2px transparent ;
+    border-radius: 10px;
+    left: 85px;
+    position: absolute;
+    top: 600px;
+    border: 1px solid #000000;
+}
+
+
+.flightClassBody-arrival2{
+    background-color: white;
+    width: 550px;
+    height: 60px;
+    left: 385px;
+    position: absolute;
+    top:1px;
+    gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: white solid;
+}
+
+
+.flightClassInfo-arrival2{
+    left: -2px;
+    top: 30px;
+    display: flex;
+    background-color: #001F3F;
+    width: 130px;
+    height: 40px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    padding: 19px 43px 0px 100px;
+    border-radius: 5px;
+}
+
+
+.flightInformationImg-arrival2{
+    background-color: white;
+    height: 30px;
+    margin-top: 75px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left:30px;
+}
+
+
+.priceFlightSelect-departure .selectButton{
+    font-size: small;
+    top: 100px;
+    left: 35px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    width: 112px;
+    height: 39px;
+    padding: 7px 14px 7px 14px;
+    border-radius: 5px;
+    border: 1px;
+    gap: 10px;
+    color: #2D9CDB;
+    border: 1px solid #2D9CDB;
+    background-color: white;
+}
+
+
+.priceFlightSelect2-Arrival2 .selectButton{
+    font-size: small;
+    top: 100px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    width: 112px;
+    height: 39px;
+    padding: 7px 14px 7px 14px;
+    border-radius: 5px;
+    border: 1px;
+    gap: 10px;
+    color: #2D9CDB;
+    background-color: white;
+
+}
+
+
+.departureFligtPrice{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 550px;
+    background-color: white;
+    margin-top: 80px;
+    margin-left: 380px;
+    background-color: white;
+    gap: 10px;
+
+}
+
+
+.arrivalFlight-arrival1{
+    position: absolute;
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    left: 30px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px;
+    background-color: white;
+
+}
+
+
+.arrivalFlightImg-arrival{
+    position: absolute;
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    left: 30px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px;
+    background-color: white;
+}
+
+
+.flightInformationImg-arrival1{
+    width: 200px;
+    height: 30px;
+    top: 65px;
+    left:25px;
+    gap: 35px;
+    justify-content: start;
+    background-color: white;
+    position: absolute;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.ArrivalTimeAndStart{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
+    background-color: white;
+}
+
+.SecondArrivalTimeAndStart{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
+    background-color: white;
+}
+
+
+.departureFlightOne{
+    width: 940px;
+    height: 282px;
+    border: 1px;
+    border: 1px solid #000000;
+    left: -1px;
+    margin-top: 11px;
+    background-color: white;
+
+}
+
+
+.departureFligtPrice .priceFlightSelect-departure{
+    display: grid;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: white;
+    padding: 20px ;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #000000
+}
+
+
+
+/*departure*/
+
+.FlightSelectionOfferingBody{
+    width: 1300px;
+    height: 200px;
+    position: absolute;
+    top: 440px;
+    left: 50px;
+    gap: 82px;
+    background-color: white;
+    border-color: transparent;
+}
+
+.dateAndPrice{
+    position: absolute;
+    top: -2px;
+    display: flex;
+    width: 1223px;
+    height: 142.18px;
+    gap: 910px;
+    margin-left: 30px ;
+    background-color: white;
+}
+
+
+.datePriceOne{
+    display: flex;
+    flex-direction: row;
+    width: 938px;
+    height: 142.18px;
+    background-color: white;
+    position: absolute;
+    top: -6px;
+    gap: 9.8px;
+    left: 116px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.datePriceOne .box{
+    width: 47px;
+    height: 123px;
+    padding: 10.54px 50.96px 10.54px 50.96px;
+    gap: 8.79px;
+    background-color: #001F3F;
+    color: white;
+}
+
+
+.flightDepartureInformation1{
+    width: 950px;
+    height: 326px;
+    gap: 16px;
+    background-color: white;
+    border: 2px transparent;
+    border-radius: 10px;
+    left: 145px;
+    position: absolute;
+    top: 200px;
+}
+
+.numberOfFlights-departing{
+    position: absolute;
+    top: 2px;
+    background-color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 145px;
+    height: 28px;
+}
+
+
+.firstflightInfo-departing{
+    position: absolute;
+    top: 36px;
+    left: 1px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 114px;
+    width: 939px;
+    height: 67px;
+    background-color: white;
+}
+
+
+.flightClassInfo{
+    display: flex;
+    background-color: #001F3F;
+    width: 130px;
+    height: 40px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    padding: 19px 43px 0px 100px;
+}
+
+
+.flightClassBody{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: white solid;
+    width: 543px;
+    height: 55px;
+}
+
+
+.flightClass{
+    width: 60px;
+    height: 20px;
+    padding: 18px 43px 18px 70px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 10px;
+    background-color:  #001F3F;
+    color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.flightClass2{
+    width: 60px;
+    height: 20px;
+    padding: 18px 43px 18px 70px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 10px;
+    background-color: #001F3F;
+    color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.flightClass3{
+    width: 60px;
+    height: 20px;
+    padding: 18px 43px 18px 70px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 10px;
+    background-color: #001F3F;
+    color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.arrivalFlightInformation-departureOne {
+    width: 230px;
+    height: 110px;
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    justify-content: start;
+    background-color: white;
+    position: absolute;
+    left: 18px;
+    top: 202px;
+}
+
+
+.arrivalFlightImg-departingOne span{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 73px;
+    height: 28px;
+    background-color: white;
+}
+
+.departing-div{
+    display: grid;
+    background-color: white;
+    border: 2px transparent ;
+    border-radius: 10px;
+    position: absolute;
+    width: 600px;
+    height: 105px;
+    top:-140px;
+    gap: 60px;
+    left: 100px;
+}
+
+.departing-div img{
+    width: 24px;
+    height: 24px;
+    margin-right: 1300px;
+    background-color: white;
+    margin-top: 35px;
+}
+
+
+.departing-div span{
+    color: #000000;
+    background-color: white;
+    width: 213px;
+    height: 28px;
+    position: absolute;
+    left: 30px;
+    font-family: 'Lato';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 35px;
+}
+
+
+.flightInformationImg{
+    top:90px;
+    justify-content: space-around;
+    background-color: white;
+    width: 180px;
+    height: 23px;
+    margin-top: -140px;
+    margin-left: 3px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.datePriceOne .box .date{
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 75px;
+    height: 25px;
+}
+
+
+.datePriceOne .box .day{
+    width: 55px;
+    height: 25px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.datePriceOne .box .amount{
+    width: 79px;
+    height: 25px;
+    font-family: 'Lato';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.datePriceOne .box .naira{
+    width: 48px;
+    height: 25px;
+    font-family: 'Lato';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.flightClass-departure2{
+    width: 60px;
+    height: 20px;
+    padding: 18px 43px 18px 70px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 10px;
+    background-color: #001F3F;
+    color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.priceFlightSelect1-departure .selectButton{
+    top: 100px;
+    text-align: center;
+    display: grid;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    width: 112px;
+    height: 39px;
+    padding: 7px 14px 7px 14px;
+    border-radius: 5px;
+    border: 1px;
+    gap: 10px;
+    color: #2D9CDB;
+}
+
+.flightRoute{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    background-color: white;
+}
+
+.arrivaltime{
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    background-color: white;
+}
+
+.takeOfTimeRoute2-departure{
+    width: 50px;
+    height: 50px;
+    padding: 1px 0px 1px 0px;
+    margin-left: 5px;
+    margin-top: 0px;
+    background-color: white;
+    width: 80px;
+}
+
+
+.arrivalTimeRoute2-departure{
+    width: 70px;
+    height: 50px;
+    padding: 1px 0px 1px 0px;
+    margin-left: -10px;
+    background-color: white;
+}
+
+
+.flightPriceNA-departure3{
+    width: 170px;
+    height: 145px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 192px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+.flightInformationImg span{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: white;
+}
+
+
+.flightInformationImg-departing{
+    width: 200px;
+    height: 50px;
+    top: 65px;
+    left:1px;
+    gap: 35px;
+    justify-content: start;
+    background-color: white;
+    position: absolute;
+}
+
+
+.flightInformationImg-departing span{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 73px;
+    height: 28px;
+    background-color: white;
+}
+
+
+
+
+.takeOfTimeAbuja{
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: white;
+}
+
+.dateAndPrice img{
+    width: 60px;
+    height: 18.5px;
+    margin-top:  50px;
+    background-color: white;
+    margin-left: 45px;
+}
+
+.arrivalFlightImg-departingOne{
+    position: absolute;
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    left: 30px;
+    background-color: white;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px;
+}
+
+
+.timeOfStartAndArrive{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
+    background-color: white;
+}
+
+.first-departureFlightOne{
+    width: 940px;
+    height: 282px;
+    border: 1px;
+    border: 1px solid #000000;
+    left: -1px;
+    margin-top: 35px;
+    background-color: white;
+}
+
+.ArrivalflightDepartureInformation-arrival{
+    gap: 16px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-left: 137px;
+    position: absolute;
+    top: 550px;
+    width: 948px;
+    height: 260px;
+}
+
+/*.box .wednesday{*/
+/*    background-color: #2D9CDB;*/
+/*}*/
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datePriceOne .box:nth-child(3) {
+    background-color: #2D9CDB;
+}
