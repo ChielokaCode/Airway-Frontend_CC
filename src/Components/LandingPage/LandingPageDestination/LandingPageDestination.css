@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+.dest-container {
+
+    width: 1289px;
+    height: 674px;
+    top: 1548px;
+    left: 63px;
+    gap: 48px;
+    padding: 20px;
+    align-items: center;
+    position: absolute;
+    font-family: Lato;
+
+  }
+  .htop1{
+    position: absolute;
+
+    width: 382px;
+    height: 50px;
+    gap: 0px;
+    opacity: 0px;
+
+
+   
+    left: 450px;
+
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50.4px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+
+
+  }
+
+
+  .gallery {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1289px;
+    height: 576px;
+    gap: 24px;
+    opacity: 0px;
+
+
+  }
+
+  .item {
+    flex-basis: calc(33.333% - 60px);
+    color: #fff;
+    position: relative;
+    width: 387px;
+    height: 276px;
+    top: 40px;
+    left: -4px;
+    
+  }
+
+  .dest-item-image {
+    width: 120%;
+    display: block;
+    width: 387px;
+    height: 276px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 178px;
+    font-weight: bold;
+    font-size: 28px;
+  }

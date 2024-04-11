@@ -1,25 +1,32 @@
 {
-  "name": "airway-api-frontend-app",
+  "name": "airway-front-end-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint vite-project --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-oauth/google": "^0.12.1",
-    "@syncfusion/ej2-navigations": "^25.1.35",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
+    "jwt-decode": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
-    "react-collapsible": "^2.10.0",
+    "react-datepicker": "^6.6.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.22.1",
-    "react-tabs": "^6.0.2"
+    "react-slick": "^0.30.2",
+    "react-toastify": "^10.0.5",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
@@ -29,6 +36,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "vite": "^5.2.7"
   }
 }

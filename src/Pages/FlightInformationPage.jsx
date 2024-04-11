@@ -1,14 +1,9 @@
-import React from "react";
-import FlightInformationPageHeader from "../Components/FlightInformationPage/FlightInformationPageHeader/FlightInformationPageHeader.jsx";
-import FlightInformationPageBody from "../Components/FlightInformationPage/FlightInformationPageBody/FlightInformationPageBody.jsx";
-import "./FlightPageInfo.css";
+import React from 'react'
+
 function FlightInformationPage() {
   return (
-    <div className="FlightInfoPage">
-      <FlightInformationPageHeader />
-      <FlightInformationPageBody />
-    </div>
-  );
+    <div>FlightInformationPage</div>
+  )
 }
 
-export default FlightInformationPage;
+export default FlightInformationPage

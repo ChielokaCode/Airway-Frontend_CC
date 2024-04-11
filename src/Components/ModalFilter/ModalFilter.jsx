@@ -2,119 +2,139 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './ModalFilter.css';
 
-const ModalFilter = ({ isOpen, handleCheckboxChange, closeFilterModal }) => {
-    const [selectedFilters, setSelectedFilters] = useState([]);
+const ModalFilter = ({ isOpen, closeFilterModal }) => {
+  const [selectedFilters, setSelectedFilters] = useState([]);
+  const [filters, setFilters] = useState({
+    date: false,
+    bookingReferenceNo: false,
+    flightNo: false,
+    pnr: false,
+    arrivalDate: false,
+    departurePort: false,
+    arrivalPort: false
+  });
 
-    useEffect(() => {
-        setSelectedFilters([]);
-    }, [isOpen]);
+  const handleCheckboxChange = (filter) => {
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      [filter]: !prevFilters[filter]
+    }));
+  };
 
-    const handleFilterChange = (filter) => {
-        handleCheckboxChange(filter);
-        closeFilterModal();
-    };
+  // useEffect(() => {
+  //     setSelectedFilters([]);
+  // }, [isOpen]);
 
-    return (
-        <div className={`filter-container ${isOpen ? 'open' : ''}`}>
-            <div className="filter-inner-container">
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="dateFilter"
-                        onChange={() => handleFilterChange('Date')}
-                        checked={selectedFilters.includes('Date')}
-                    />
-                    <label htmlFor="dateFilter">
-                        Date
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="refFilter"
-                        onChange={() => handleFilterChange('Booking Reference No')}
-                        checked={selectedFilters.includes('Booking Reference No')}
-                    />
-                    <label htmlFor="refFilter">
-                        Booking Reference No
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="flightNoFilter"
-                        onChange={() => handleFilterChange('Flight No')}
-                        checked={selectedFilters.includes('Flight No')}
-                    />
-                    <label htmlFor="flightNoFilter">
-                        Flight No
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="PNRFilter"
-                        onChange={() => handleFilterChange('PNR')}
-                        checked={selectedFilters.includes('PNR')}
-                    />
-                    <label htmlFor="PNRFilter">
-                        PNR
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="departureDateFilter"
-                        onChange={() => handleFilterChange('Departure Date')}
-                        checked={selectedFilters.includes('Departure Date')}
-                    />
-                    <label htmlFor="departureDateFilter">
-                        Flight No
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="arrivalDateilter"
-                        onChange={() => handleFilterChange('Arrival Date')}
-                        checked={selectedFilters.includes('Arrival Date')}
-                    />
-                    <label htmlFor="arrivalDateilter">
-                        Arrival Date
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="departurePortFilter"
-                        onChange={() => handleFilterChange('Departure Port')}
-                        checked={selectedFilters.includes('Departure Port')}
-                    />
-                    <label htmlFor="departurePortFilter">
-                        Departure Port
-                    </label>
-                </div>
-                <div className="filter-checkbox">
-                    <input
-                        type="checkbox"
-                        id="arrivalPortFilter"
-                        onChange={() => handleFilterChange('Arrival Port')}
-                        checked={selectedFilters.includes('Arrival Port')}
-                    />
-                    <label htmlFor="arrivalPortFilter">
-                        Arrival Port
-                    </label>
-                </div>
+  // const handleFilterChange = (filter) => {
+  //     handleCheckboxChange(filter);
+  //     closeFilterModal();
+  // };
 
-            </div>
+  const handleApplyFilters = () => {
+    applyFilters(filters);
+  };
+
+  return (
+      <div className={`filter-container ${isOpen ? 'open' : ''}`}>
+        <div className="filter-inner-container">
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="dateFilter"
+                onChange={() => handleCheckboxChange('date')}
+                checked={filters.date}
+            />
+            <label htmlFor="dateFilter">
+              Date
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="refFilter"
+                onChange={() => handleCheckboxChange('bookingReferenceNo')}
+                checked={filters.bookingReferenceNo}
+            />
+            <label htmlFor="refFilter">
+              Booking Reference No
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="flightNoFilter"
+                onChange={() => handleCheckboxChange('flightNo')}
+                checked={filters.flightNo}
+            />
+            <label htmlFor="flightNoFilter">
+              Flight No
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="PNRFilter"
+                onChange={() => handleCheckboxChange('pnr')}
+                checked={filters.pnr}
+            />
+            <label htmlFor="PNRFilter">
+              PNR
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="departureDateFilter"
+                onChange={() => handleCheckboxChange('departureDate')}
+                checked={filters.departureDate}
+            />
+            <label htmlFor="departureDateFilter">
+              Flight No
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="arrivalDateilter"
+                onChange={() => handleCheckboxChange('arrivalDate')}
+                checked={filters.arrivalDate}
+            />
+            <label htmlFor="arrivalDateilter">
+              Arrival Date
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="departurePortFilter"
+                onChange={() => handleCheckboxChange('departurePort')}
+                checked={filters.departurePort}
+            />
+            <label htmlFor="departurePortFilter">
+              Departure Port
+            </label>
+          </div>
+          <div className="filter-checkbox">
+            <input
+                type="checkbox"
+                id="arrivalPortFilter"
+                onChange={() => handleCheckboxChange('arrivalPort')}
+                checked={filters.arrivalPort}
+            />
+            <label htmlFor="arrivalPortFilter">
+              Arrival Port
+            </label>
+          </div>
+
         </div>
-    );
+      </div>
+  );
 };
 
 ModalFilter.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    handleCheckboxChange: PropTypes.func.isRequired,
-    closeFilterModal: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  handleCheckboxChange: PropTypes.func.isRequired,
+  closeFilterModal: PropTypes.func.isRequired,
 };
 
 export default ModalFilter;

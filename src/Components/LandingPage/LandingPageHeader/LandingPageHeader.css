@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.header-main-container{
+  width: 1440px;
+  height: 79px;
+
+}
+.navbarrpage {
+    display: flex;
+    width: 1289px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    background-color: #ffffff;
+    border-bottom: 0px solid #000000;
+    position:absolute;
+    top: 1%;
+    left: 5%;
+  }
+
+  .logoo-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -20px;
+
+  }
+
+  .logoo-img {
+    position: absolute;
+    width: 40px; 
+    left: 10px;
+  }
+
+  .airwayy-logo {
+    color: #000000;
+    font-size: 24px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    left: 55px;
+
+  }
+
+  .menuu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    width: 268px;
+  height: 32px;
+  gap: 16px;
+  position: relative;
+  left: 10px;
+  align-items: center;
+  }
+
+  .menuu-item {
+    font-size: 16px;
+    color: #001F3F;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .uFirstName{
+    color: #2D9CDB;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+  .buttonn {
+    padding: 10px 20px;
+    background-color:  #2D9CDB;
+
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 127px;
+    height: 48px;
+    gap: 16px;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+
+
+  }

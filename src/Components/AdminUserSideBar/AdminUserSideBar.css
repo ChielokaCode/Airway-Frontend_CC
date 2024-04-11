@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.admin-sidebar-containerUser{
+    width: 241px;
+    height: 1024px;
+    padding: 49px, 89px, 729px, 29px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #1E1E1E33;
+}
+.airway-logoUser{
+    position: absolute;
+    width: 123px;
+    height: 42px;
+    top: 49px;
+    left: 29px;
+    gap: 4px;
+
+}
+.airway-logoUser:hover{
+    transform: scale(1.1);
+}
+.sidebar-menu-containerUser{
+    position: absolute;
+    width: 121px;
+    height: 171px;
+    top: 124px;
+    left: 29px;
+    gap: 25px;
+}
+.sidebar-flight-listingUser{
+    position: absolute;
+    display: flex;
+    width: 121px;
+    height: 24px;
+    gap: 7px;
+
+
+}
+
+.sidebar-flight-listingUser:hover{
+    border-radius: 1px;
+    transform: scale(1.1);
+}
+
+
+.sidebar-flight-listing-iconUser{
+    width: 24px;
+    height: 24px;
+
+}
+.sidebar-flight-listing-textUser{
+    width: 90px;
+    height: 21px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #323232;
+
+
+}
+.sidebar-flight-bookingUser{
+    position: absolute;
+    display: flex;
+    width: 121px;
+    height: 24px;
+    gap: 7px;
+    top: 50px;
+
+}
+.sidebar-flight-bookingUser:hover{
+    border-radius: 1px;
+    transform: scale(1.1);
+}
+
+.sidebar-flight-booking-iconUser{
+    position: relative;
+    width: 20px;
+    height: 19px;
+    top: 2px;
+    left: 2px;
+
+}
+.sidebar-flight-booking-textUser{
+    width: 58px;
+    height: 21px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #323232;
+}
+.sidebar-flight-userUser{
+    display: flex;
+    position: absolute;
+    width: 89px;
+    height: 24px;
+    gap: 7px;
+    top: 100px;
+    border-radius: 1px;
+}
+.sidebar-flight-userUser:hover{
+    border-radius: 1px;
+    transform: scale(1.1);
+}
+
+.sidebar-flight-user-iconUser{
+    width: 18.41px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+
+}
+.sidebar-flight-user-textUser{
+    width: 40px;
+    height: 21px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:#2D9CDB ;
+
+}

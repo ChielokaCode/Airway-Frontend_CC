@@ -1,5 +1,5 @@
-import React from "react";
-import Verify from "../Components/VerifyResponsePage/Verify.jsx";
+import Verify from "../Components/VerifyUser/Verify";
+
 
 const VerifyPage = () => {
     return (

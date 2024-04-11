@@ -11,8 +11,8 @@
 }
 .admin-navbar-search{
     position: absolute;
-    width: 523px;
-    height: 28px;
+    width: 33rem;
+    height: 2rem;
     top: 6px;
     left: 10px;
     padding: 12px;
@@ -23,7 +23,7 @@
 }
 .admin-navbar-search-text{
     position: absolute;
-    width: 510px;
+    width: 32.52rem;
     height: 28px;
     font-family: Inter;
     font-size: 16px;
@@ -32,16 +32,17 @@
     letter-spacing: 0px;
     text-align: left;
     color: black;
-    top: 10px;
-    left: 15px;
+    border:none;
+    top: 0.03rem;
+    left: 0.04rem;
 
 }
 .admin-navbar-filter{
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 14px;
-    left: 570px;
+    top: 0.5rem;
+    left: 33.7rem;
     width: 30px;
     cursor: pointer;
 }
@@ -52,7 +53,7 @@
     position: relative;
     width: 30px;
     height: 20px;
-    top: 10px;
+    top: 0.005rem;
     left: 5px;
 
 }

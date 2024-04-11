@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:500|Lato:400,500");
-.admin-dashboard-hero-button{
+.admin-dashboard-hero-buttons{
     position: absolute;
     width: 1132px;
     height: 58px;
@@ -9,7 +9,7 @@
     align-items: center;
 
 }
-.admin-dashboard-hero-text{
+.admin-dashboard-hero-texts{
     position: absolute;
     width: 71px;
     height: 36px;
@@ -22,7 +22,7 @@
     color: #333333;
 
 }
-.admin-dashboard-button{
+.admin-dashboard-buttons{
     position: absolute;
     width: 169px;
     height: 58px;
@@ -40,16 +40,16 @@
     left: 940px;
     border: none;
 }
-.admin-dashboard-button:active{
+.admin-dashboard-buttons:active{
     transform: scale(0.9);
     box-shadow: 2px 2px 5px rgba(0,0,0,2);
 }
-.admin-dashboard-button:hover{
+.admin-dashboard-buttons:hover{
     background: #2383bb;
 }
 
 
-.accordion{
+.accordions{
     width: 1135px;
     height: auto;
     top: 152px;
@@ -58,13 +58,13 @@
     position: absolute;
 }
 
-.item{
+.items{
 
     margin-bottom: 5px;
     border: 1px solid #cccccc;
 
 }
-.title{
+.titles{
     border-radius: 5px 5px 0 0;
     background-color: #001f3f;
     width: 1135px;
@@ -75,19 +75,19 @@
 }
 
 
-.content-flight {
+.content-flights {
     padding: 0 20px;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
-.container-tabs{
+.container-tabss{
     background-color: #ffffff;
     width: 100%;
     padding-top: 2rem;
 }
-.content-flight.show {
+.content-flights.shows {
     width: 100%;
     height: auto;
     max-height: 9999px;
@@ -96,24 +96,24 @@
 }
 
 
-.active .content-flight {
+.active .content-flights {
     max-height: 605px; /* Adjusted height */
 }
 
 
 
-.dropdown-button {
+.dropdown-buttons {
     margin-left: 20px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
 }
 
-.dropdown-button:hover{
+.dropdown-buttons:hover{
     transform: scale(1.1);
 }
 
-.elipse-button{
+.elipse-buttons{
     background-color: transparent;
     border: 0;
     color: #FFFFFF;
@@ -122,14 +122,14 @@
     margin-right: 40px;
 }
 
-.header-elipses:hover{
+.header-elipsess:hover{
     transform: scale(1.1);
 }
 
 
 
 
-.listing-header-icon-arrow{
+.listing-header-icon-arrows{
     position: relative;
     width: 24px;
     height: 24px;
@@ -137,7 +137,7 @@
     Top: 14px;
 
 }
-.header-titles{
+.header-titless{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     width: 920px;
@@ -148,37 +148,37 @@
     right: 0;
     color: #ffffff;
 }
-.header-title-1{
+.header-title-1s{
     width: 98px;
     height: 56px;
     gap: 2px
 
 }
-.header-title-2{
+.header-title-2s{
     width: 110px;
     height: 56px;
     gap: 2px;
 
 }
-.header-title-3{
+.header-title-3s{
     width: 144px;
     height: 56px;
     gap: 2px;
 
 }
-.header-title-4{
+.header-title-4s{
     width: 183px;
     height: 71px;
     gap: 2px;
 
 }
-.header-title-5{
+.header-title-5s{
     width: 153px;
     height: 71px;
     gap: 2px;
 
 }
-.header-title-up{
+.header-title-ups{
     font-family: Inter;
     font-size: 20px;
     font-weight: 600;
@@ -187,24 +187,45 @@
     text-align: left;
 
 }
-.header-title-down{
+.header-title-downs{
     font-family: Inter;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 10px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-family: Lato;
+    margin-top: 5px;
+
+}
+.header-title-down1s{
+    font-family: Inter;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 15px;
     letter-spacing: 0px;
     text-align: left;
     font-family: Lato;
 
 }
-.header-title-down-4{
-    font-size: 16px;
-    font-weight: 400;
+.header-title-down-4s{
+    font-size: 13px;
+    font-weight: 300;
     line-height: 13px;
     letter-spacing: 0em;
     text-align: left;
 }
-.header-title-down-5{
+
+.header-title-down-4-as{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -16px;
+}
+
+.header-title-down-5s{
     font-family: Lato;
     font-size: 15px;
     font-weight: 500;
@@ -215,7 +236,7 @@
 }
 
 
-.header-elipses{
+.header-elipsess{
     position: relative;
     width: 25px;
     height: 25px;
@@ -223,15 +244,15 @@
     left: 970px;
 }
 
-.content-classes{
+.content-classess{
     display: none;
 }
 
-.show-content-classes{
+.show-content-classess{
     display: block;
 }
 
-.content-details{
+.content-detailss{
     margin-left: -30px;
     justify-content: space-around;
     align-items: flex-start;
@@ -241,12 +262,12 @@
     margin-bottom: 5rem;
 }
 
-.tabs-classes{
+.tabs-classess{
     list-style: none;
     border-bottom: 2px solid #cccccc;
 }
 
-.current-tab{
+.current-tabs{
     cursor: pointer;
     border-bottom: 2px solid #2D9CDB;
     color: #2D9CDB;
@@ -259,38 +280,92 @@
     cursor: pointer;
 }
 
-.right-side{
+.right-sides{
     float: right;
 }
-.left-side{
+.left-sides{
     float: left;
 }
 
-.left-side, .right-side {
+.left-sides, .right-sides {
     width: 20%; /* Adjust width as needed */
 }
 
-.passengers-classess{
+.passengers-classesss{
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 1rem;
 }
-.content-passengers-booked{
+.content-passengers-bookeds{
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 50px;
 }
-.my-table {
+.my-tables {
     border-collapse: collapse;
     width: 100%;
 }
 
-.my-table th, .my-table td {
+.my-tables th, .my-tables td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
-.my-table th {
+.my-tables th {
     background-color: #f2f2f2;
+}
+
+.paginations {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25rem;
+}
+
+.paginations button {
+    background-color: #ffffff;
+    border: 2px solid #001f3f;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 9rem;
+}
+
+.paginations button:hover {
+    background: #001f3f;
+    color: #ffffff;
+
+
+}
+
+
+
+.paginations button:disabled {
+    background-color: #ffffff;
+    color: #001f3f;/* Grey */
+    cursor: not-allowed;
+}
+
+.loading-texts {
+    font-size: 34px;
+    margin-right: 10px;
+    text-align: center;
+    color: #001f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 150px;
+    left: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
 }

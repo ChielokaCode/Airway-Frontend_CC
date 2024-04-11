@@ -1,0 +1,209 @@
+.allpage-form{
+    background: #FFFFFF;
+    position:absolute;
+    top: 8%;
+    left: 18%;
+    width: 80%;
+}
+.add-container-edit {
+    width: 70%;
+    margin: 10px 320px 10px auto;
+    font-size: 20px;
+    background: #FFFFFF;
+    color: #000000;
+    font-family:  sans-serif;
+    line-height: 10px;
+    letter-spacing: 0;
+    text-transform: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.add-container h2{
+    font-weight: 10;
+
+}
+
+
+.icon11 {
+    margin-right: 10px;
+    margin-top: -7px;
+
+}
+
+
+
+.flight-formcont{
+    width: 927px;
+    height: 266px;
+    top: 30px;
+    left: 28px;
+    gap: 19px;
+
+}
+
+.flight-form h2 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 122px;
+
+}
+
+.flight-form{
+    background: #fff;
+
+}
+
+.add-input-group {
+    flex-basis: calc(26.333% - 10px);
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+
+}
+
+.add-input-group label {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.add-input-group input[type="text"],
+.add-input-group input[type="date"],
+.add-input-group input[type="time"],
+.add-input-group select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 9px;
+    gap: 12px;
+
+
+
+}
+
+
+.add-form-row {
+
+
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .form-row > * {
+        flex: 1;
+    }
+}
+
+
+
+.form-container-edit {
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    height: 5%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+    /*backface-visibility: hidden;*/
+
+
+}
+
+
+.form-container h2{
+    font-family: sans-serif;
+    font-weight: 100;
+
+}
+
+.form-container2{
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #2D9CDB;
+
+
+}
+
+
+
+
+.service-class {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.service-class h2 {
+    margin: 0;
+    color: #333;
+    font-family: sans-serif;
+
+}
+
+.seat-row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.select-button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.save-button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 13px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 300px;
+
+}
+
+
+.iconn11 {
+    margin-right: -60px;
+    margin-top: -12px;
+    font-size: 18px;
+    font-family:  sans-serif;
+    line-height: 0;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.save-container-edit {
+    width: 62.2%;
+    padding: 5px;
+    margin: 20px auto 20px 15px;
+
+}
+
+
+.flight-text {
+    margin-top: 1px;
+}

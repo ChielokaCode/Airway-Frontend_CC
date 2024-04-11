@@ -1,0 +1,584 @@
+/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700");*/
+/*.ticket-header{*/
+/*    background: #001F3F;*/
+/*    width: 1440px;*/
+/*    height: 107px;*/
+/*    position: absolute;*/
+/*    top: 0px;*/
+/*}*/
+/*.ticket-text{*/
+/*    font-family: Lato;*/
+/*    font-size: 32px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    text-align: center;*/
+/*    color: #FFFFFF;*/
+/*    position: absolute;*/
+/*    top: 40px;*/
+/*    left: 578px;*/
+/*    width: 294px;*/
+/*    height: 28px*/
+/*}*/
+/*.ticket-hero-first{*/
+/*    width: 350px;*/
+/*    height: 72px;*/
+/*    top: 207px;*/
+/*    position: absolute;*/
+/*    left: 71px;*/
+/*    gap: 16px*/
+/*}*/
+/*.ticket-hero-second{*/
+/*    width: 246px;*/
+/*    height: 64px;*/
+/*    position: absolute;*/
+/*    top: 207px;*/
+/*    left: 1117px;*/
+/*    gap: 8px*/
+/*}*/
+/*.ticket-hero-first-text-up{*/
+/*    font-family: Lato;*/
+/*    font-size: 32px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    color: #000000;*/
+/*    position: absolute;*/
+/*    text-align: left;*/
+/*    width: 355px;*/
+/*    height: 28px*/
+/*}*/
+/*.ticket-hero-first-text-down{*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 400;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    color: #00000080;*/
+/*    position: absolute;*/
+/*    text-align: left;*/
+/*    top: 45px;*/
+/*    width: 317px;*/
+/*    height: 28px*/
+/*}*/
+/*.ticket-hero-second-text-up{*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    color: #000000;*/
+/*    position: absolute;*/
+/*    text-align: left;*/
+/*    width: 256px;*/
+/*    height: 28px*/
+/*}*/
+/*.ticket-hero-second-text-down{*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 400;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    position: absolute;*/
+/*    text-align: left;*/
+/*    top: 37px;*/
+/*    left: 80px;*/
+/*    width: 73px;*/
+/*    height: 28px;*/
+/*    color: #00000080;*/
+/*}*/
+/*.ticket-table-one{*/
+/*    display: flex;*/
+/*    width: 1291px;*/
+/*    height: 332px;*/
+/*    position: absolute;*/
+/*    top: 326px;*/
+/*    left: 71px;*/
+/*    gap: 28px*/
+/*}*/
+/*.table-one-first{*/
+/*    width: 1090px;*/
+/*    height: 332px;*/
+/*    gap: 16px;*/
+/*}*/
+/*.ticket-table-one-head{*/
+/*    background: #2D9CDB;*/
+/*    width: 1090px;*/
+/*    height: 116px;*/
+/*    padding: 22px, 15px, 22px, 15px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px;*/
+/*}*/
+/*.ticket-table-one-head-text{*/
+/*    position: relative;*/
+/*    margin: 0 20px;*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto auto;*/
+/*    width: 1060px;*/
+/*    height: 72px;*/
+/*    padding: 22px, 0px, 22px, 0px;*/
+/*    gap: 87px;*/
+/*    font-family: Lato;*/
+/*    font-size: 18px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    color: #FFFFFF;*/
+/*    top: 45px;*/
+/*}*/
+/*.one-head-1{*/
+/*    width: 138px;*/
+/*    height: 28px;*/
+/*    font-size: 18px;*/
+/*}*/
+/*.one-head-4{*/
+/*    width: 170px;*/
+/*    height: 28px;*/
+/*    font-size: 17px;*/
+/*}*/
+
+/*.ticket-table-one-body-one{*/
+/*    position: relative;*/
+/*    border: 2px solid #2D9CDB;*/
+/*    width: 1090px;*/
+/*    height: 92px;*/
+/*    padding: 18px, 22px, 18px, 38px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px;*/
+/*    top: 20px;*/
+
+/*}*/
+/*.ticket-table-one-body-one-text{*/
+/*    position: relative;*/
+/*    margin: 0 20px;*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto auto;*/
+/*    width: 1060px;*/
+/*    width: 1018px;*/
+/*    height: 56px;*/
+/*    gap: 160px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    top: 25px;*/
+/*    left: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.ticket-table-one-body-two{*/
+/*    position: relative;*/
+/*    border: 2px solid #2D9CDB;*/
+/*    width: 1090px;*/
+/*    height: 92px;*/
+/*    padding: 21px, 40px, 21px, 40px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px;*/
+/*    top: 40px;*/
+/*}*/
+/*.ticket-table-one-body-two-text{*/
+/*    position: relative;*/
+/*    margin: 0 20px;*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto auto;*/
+/*    width: 1016px;*/
+/*    height: 50px;*/
+/*    gap: 163px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    top: 25px;*/
+/*    left: 20px;*/
+/*    text-align: center;*/
+/*}*/
+/*.two-body-1{*/
+/*    position: relative;*/
+/*    width: 72px;*/
+/*    height: 28px*/
+/*}*/
+
+/*.table-one-second{*/
+/*    width: 173px;*/
+/*    height: 274px;*/
+/*    gap: 13px*/
+
+/*}*/
+/*.table-one-second-top{*/
+/*   background:#2D9CDB;*/
+/*    width: 173px;*/
+/*    height: 116px;*/
+/*    padding: 44px, 62px, 44px, 62px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px*/
+
+/*}*/
+/*.table-one-second-top-text{*/
+/*    font-family: Lato;*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    position: relative;*/
+/*    top: 45px;*/
+/*    left: 60px;*/
+/*    color:#FFFFFF;*/
+/*}*/
+/*.table-one-second-middle{*/
+/*    background: #001F3F;*/
+/*    position: absolute;*/
+/*    width: 173px;*/
+/*    height: 66px;*/
+/*    padding: 19px, 45px, 19px, 45px;*/
+/*    border-radius: 5px;*/
+/*    top: 130px;*/
+/*}*/
+/*.table-one-second-middle-text{*/
+/*    font-family: Lato;*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    position: relative;*/
+/*    top: 20px;*/
+/*    left: 40px;*/
+/*    color:#FFFFFF;*/
+/*}*/
+
+/*.table-one-second-bottom{*/
+/*    background: #001F3F;*/
+/*    position: absolute;*/
+/*    width: 172px;*/
+/*    height: 66px;*/
+/*    padding: 19px, 50px, 19px, 50px;*/
+/*    border-radius: 5px;*/
+/*    top: 210px;*/
+
+/*}*/
+/*.table-one-second-bottom-text{*/
+/*    font-family: Lato;*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    position: relative;*/
+/*    top: 20px;*/
+/*    left: 43px;*/
+/*    color:#FFFFFF;*/
+/*}*/
+/*.ticket-table-two{*/
+/*    position: absolute;*/
+/*    width: 1290px;*/
+/*    height: 488px;*/
+/*    top: 839px;*/
+/*    left: 71px;*/
+/*    gap: 24px*/
+/*}*/
+/*.ticket-table-two-head{*/
+/*    width: 1287px;*/
+/*    height: 58px;*/
+/*    padding: 15px, 2px, 15px, 10px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px;*/
+/*    background: #001F3F;*/
+/*}*/
+/*.ticket-table-two-head-text{*/
+/*    position: relative;*/
+/*    margin: 0 20px;*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto;*/
+/*    width: 1275px;*/
+/*    height: 28px;*/
+/*    top: 15px;*/
+/*    left: 10px;*/
+/*    gap: 370px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-two-head-text-first{*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    width: 75px;*/
+/*    height: 28px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-two-head-text-middle{*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    width: 270px;*/
+/*    height: 28px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-two-head-text-last{*/
+/*    position: absolute;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    width: 180px;*/
+/*    height: 28px;*/
+/*    color: #FFFFFF;*/
+/*    left: 1075px;*/
+/*}*/
+/*.ticket-table-two-body{*/
+/*    position: absolute;*/
+/*    width: 1290px;*/
+/*    height: 406px;*/
+/*    top: 80px;*/
+/*    gap: 27px*/
+/*}*/
+/*.ticket-table-two-body-box1{*/
+/*    width: 1288px;*/
+/*    height: 140px;*/
+/*    gap: 24px*/
+/*}*/
+/*.ticket-table-two-body-box1-blue{*/
+/*    background: #2D9CDB;*/
+/*    width: 1288px;*/
+/*    height: 88px;*/
+/*    padding: 8px, 56px, 8px, 56px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px*/
+/*}*/
+/*.ticket-table-two-body-box1-blue-text{*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    width: 1176px;*/
+/*    height: 72px;*/
+/*    padding: 22px, 0px, 22px, 0px;*/
+/*    gap: 316px;*/
+/*    left: 65px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*.ticket-table-two-body-box1-white{*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto;*/
+/*    position: relative;*/
+/*    width: 1216px;*/
+/*    height: 28px;*/
+/*    gap: 293px;*/
+/*    left: 35px;*/
+/*    top: 25px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+
+/*}*/
+/*.ticket-table-two-body-key-value{*/
+/*    display: grid;*/
+/*    gap: 20px;*/
+/*    grid-template-columns: auto auto;*/
+/*    position: relative;*/
+/*    width: 1287px;*/
+/*    height: 82px;*/
+/*    border-radius: 5px;*/
+/*    border: 2px;*/
+/*    gap: 10px;*/
+/*    background: #2D9CDB;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    top: 20px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-two-body-key-value-first{*/
+/*    position: absolute;*/
+/*    width: 155px;*/
+/*    height: 28px;*/
+/*    top: 27px;*/
+/*    left: 39px;*/
+
+/*}*/
+/*.ticket-table-two-body-key-value-second{*/
+/*    position: absolute;*/
+/*    width: 135px;*/
+/*    height: 28px;*/
+/*    top: 21px;*/
+/*    left: 746px*/
+
+/*}*/
+/*.ticket-table-three{*/
+/*    position: absolute;*/
+/*    width: 1290px;*/
+/*    height: 488px;*/
+/*    top: 1404px;*/
+/*    left: 75px;*/
+/*    gap: 24px;*/
+
+/*}*/
+/*.ticket-table-three-head{*/
+/*    background: #001F3F;*/
+/*    width: 1289px;*/
+/*    height: 58px;*/
+/*    padding: 15px, 49px, 15px, 53px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px*/
+/*}*/
+
+/*.ticket-table-three-head-text{*/
+/*    position: relative;*/
+/*    margin: 0 20px;*/
+/*    display: grid;*/
+/*    !* gap: 20px 20px;   *!*/
+/*    grid-template-columns: auto auto auto;*/
+/*    width: 1187px;*/
+/*    height: 28px;*/
+/*    gap: 351px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    top: 15px;*/
+/*    left: 40px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-three-head-text-first{*/
+/*    width: 75px;*/
+/*    height: 28px;*/
+/*    color: #FFFFFF;*/
+
+/*}*/
+/*.ticket-table-three-head-text-middle{*/
+/*    width: 266px;*/
+/*    height: 28px;*/
+/*    color: #FFFFFF;*/
+
+/*}*/
+/*.ticket-table-three-head-text-last{*/
+/*    width: 169px;*/
+/*    height: 28px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-three-body{*/
+/*    position: relative;*/
+/*    width: 1290px;*/
+/*    height: 406px;*/
+/*    gap: 27px;*/
+/*    top: 24px;*/
+/*}*/
+/*.ticket-table-three-body-box1{*/
+/*    width: 1288px;*/
+/*    height: 140px;*/
+/*    gap: 24px*/
+
+/*}*/
+/*.ticket-table-three-body-box1-blue{*/
+/*    background: #2D9CDB;*/
+/*    width: 1288px;*/
+/*    height: 88px;*/
+/*    padding: 8px, 56px, 8px, 56px;*/
+/*    border-radius: 5px;*/
+/*    gap: 10px;*/
+/*}*/
+/*.ticket-table-three-body-box1-blue-text{*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    width: 1176px;*/
+/*    height: 72px;*/
+/*    padding: 22px, 0px, 22px, 0px;*/
+/*    gap: 316px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    left: 55px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*.ticket-table-three-body-box1-white{*/
+/*    display: grid;*/
+/*    gap: 20px 20px;*/
+/*    grid-template-columns: auto auto auto auto;*/
+/*    position: relative;*/
+/*    width: 1216px;*/
+/*    height: 28px;*/
+/*    gap: 293px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    left: 35px;*/
+/*    top: 25px;*/
+/*}*/
+/*.ticket-table-three-body-key-value{*/
+/*    display: grid;*/
+/*    gap: 20px;*/
+/*    grid-template-columns: auto auto;*/
+/*    position: relative;*/
+/*    width: 1290px;*/
+/*    height: 82px;*/
+/*    border-radius: 5px;*/
+/*    border: 2px;*/
+/*    gap: 10px;*/
+/*    background: #2D9CDB;*/
+/*    top: 20px;*/
+/*    font-family: Lato;*/
+/*    font-size: 20px;*/
+/*    font-weight: 700;*/
+/*    line-height: 28px;*/
+/*    letter-spacing: 0em;*/
+/*    text-align: left;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*.ticket-table-three-body-key-value-first{*/
+/*    position: absolute;*/
+/*    width: 155px;*/
+/*    height: 28px;*/
+/*    top: 27px;*/
+/*    left: 39px*/
+
+/*}*/
+/*.ticket-table-three-body-key-value-second{*/
+/*    position: absolute;*/
+/*    width: 135px;*/
+/*    height: 28px;*/
+/*    top: 21px;*/
+/*    left: 746px;*/
+
+
+/*}*/

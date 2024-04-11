@@ -1,0 +1,90 @@
+
+.bigmodala {
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    border: 0.46px solid black;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-contenta{
+
+    background-color: white;
+    border-radius: 4px;
+    Width: 70%;
+    Height: 38em;
+}
+
+.flyheadercontainera{
+    background-color:  #001F3F;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.FlightInfoBody {
+    background-color: white;
+    height: 70%;
+    width: 80%;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.headertext{
+    background-color: #001F3F;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.cancelbutton{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    background-color:  #001F3F;
+    border: none;
+
+}
+
+.bodyheader{
+    background-color: #001F3F;
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.formRow label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.formRow input[type="text"] {
+    flex: 2;
+    width: calc(100% - 10px);
+}
+
+.forms{
+    background-color: white;
+    margin-top: 30px;
+    display: grid;
+    gap: 40px;
+
+}

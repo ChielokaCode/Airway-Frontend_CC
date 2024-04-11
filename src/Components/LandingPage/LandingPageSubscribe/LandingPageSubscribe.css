@@ -1,0 +1,109 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Product Sans:400");.containerr {
+    width: 1284px;
+    height: 417px;
+    top: 2295px;
+    left: 72px;
+    gap: 57px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    align-items: left;
+
+}
+
+
+
+.content-wrapper {
+    position: absolute;
+    text-align: left;
+    width: 604px;
+    height: 202px;
+    gap: 24px;
+    left: 700px;
+    
+}
+
+.subscription-box {
+    width: 604px;
+    height: 130px;
+    gap: 14px;
+
+
+}
+.subscription-box h1{
+
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    width: 550px;
+    height: 50px;
+    color:#000;
+
+}
+.subscription-box p{
+
+    width: 604px;
+    height: 66px;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #00000080;
+
+
+}
+.subscription-form{
+    position: absolute;
+    width: 466px;
+    height: 48px;
+    gap: 4px;
+    top: 200px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.subscription-form input[type="email"] {
+    position: absolute;
+    left: 0px;
+    width: 320px;
+    height: 45px;
+
+}
+
+.btn1{
+    width: 142px;
+    height: 48px;
+    padding: 8px 36px 8px 36px;
+    gap: 10px;
+    border-radius: 4px;  
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #007bff;
+    position: relative;
+    left: 170px;
+    font-family: Product Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-wrapper, .content-wrapper {
+        width: 100%;
+        height: 50%;
+    }
+
+}

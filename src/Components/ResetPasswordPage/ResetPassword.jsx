@@ -4,9 +4,11 @@ import {Link, useNavigate} from "react-router-dom";
 import axios from "axios";
 import { Button, Modal } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import logo from "/src/assets/airway_logo.svg";
-import icon from "/src/assets/Icon.png";
-import homeImg from "/src/assets/homeImg.png";
+import logo from "/src/assets/logo_with_name.png";
+import icon from "/src/assets/SignupSuccessfulIcon.png";
+import homeImg from "/src/assets/umbrella.png";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ResetPassword = () => {
@@ -42,6 +44,7 @@ const ResetPassword = () => {
           }
       );
       setShowModal(true);
+      toast(`Password reset successful`)
       setStatus(true);
       setSuccessMessage("Successful Password Reset");
 
@@ -51,15 +54,13 @@ const ResetPassword = () => {
         navigate("/login");
       }, 1000);
     } catch (error) {
-      // Handle the error here
       console.error("Error during password reset:", error);
       const errorMessage =
           error.response?.data?.message ||
           "An error occurred during password reset. Please try again.";
-
+      toast.error(errorMessage);
       setStatus(false);
       setErrorMessage("Error");
-
       setShowModal(true);
       setModalMessage(errorMessage);
     }
@@ -81,23 +82,23 @@ const ResetPassword = () => {
   };
 
   return (
-      <div className="signup-container-signups">
-        <div className="grid-container-signups">
+      <div className="reset-container-signups">
+        <div className="reset-grid-container-signups">
           <div style={styles}></div>
-          <div className="grid-item-passwordResets">
-            <div className="form-table-signups">
-              <div className="top-form-signupss">
-                <img className="SQ-text-signups" src={logo}/>
-                <h4 className="createAcct-texts">Reset your Password</h4>
-                <div className="form-proper-signupss">
+          <div className="reset-grid-item-passwordResets">
+            <div className="reset-form-table-signups">
+              <div className="reset-top-form-signupss">
+                <Link to={"/"}>
+                <img className="reset-SQ-text-signups" src={logo}/>
+                </Link>
+                <h4 className="reset-createAcct-texts">Reset your Password</h4>
+                <div className="reset-form-proper-signupss">
                   <form onSubmit={(e) => onSubmit(e)}>
 
-                    <div className="single-input-fields">
-                      <label className="label-resetPs" htmlFor="password">
-                        <p>Password</p>
-                      </label>
+                    <div className="reset-single-input-fields">
+                      <label className="reset-label-resetPs" htmlFor="password">Password</label>
                       <input
-                          className="input-fieldss"
+                          className="reset-input-fieldss"
                           type="password"
                           name="password"
                           value={password}
@@ -106,12 +107,12 @@ const ResetPassword = () => {
                           required
                       />
                     </div>
-                    <div className="single-input-fields">
-                      <label className="label-resetPs" htmlFor="confirmPassword">
-                        <p>Confirm Password</p>
+                    <div className="reset-single-input-fields2">
+                      <label className="reset-label-resetPs2" htmlFor="confirmPassword">
+                        Confirm Password
                       </label>
                       <input
-                          className="input-fieldss"
+                          className="reset-input-fieldss2"
                           type="password"
                           name="confirmPassword"
                           value={confirmPassword}
@@ -120,39 +121,38 @@ const ResetPassword = () => {
                           required
                       />
                     </div>
-                    <button type="submit" className="button-ctas">
-                      Send Reset Instructions
+                    <button type="submit" className="reset-button-ctas">
+                      Reset Password
                     </button>
                   </form>
-                  <p className="alreadyHaveAnAccts">
+                  <ToastContainer/>
+                  <p className="reset-alreadyHaveAnAccts">
                     Go back to {" "}
-                    <Link to="/login">
-                      <a href="#">Sign In</a>
+                    <Link to="/login" className="go-back-to-link">
+                      Sign In
                     </Link>
                   </p>
 
-                  <div className={`modal-forgots ${showModal ? 'shows' : ''}`}>
-                    <div className="modal-container-forgots">
-                      <div className="modal-title-forgots">
+                  <div className={`reset-modal ${showModal ? 'shows' : ''}`}>
+                    <div className="reset-modal-container">
+                      <div className="reset-modal-title">
                         <Modal.Title>
                           {status ? successMessage : errorMessage}
                         </Modal.Title>
                       </div>
                       <div>
-                        <div className="icon-forgots">
+                        <div className="reset-icon">
                           <img src={icon}/>
                         </div>
-                        <div className="text-body-forgots">
+                        <div className="reset-text-body">
                           <Modal.Body>
                             {modalMessage}
                           </Modal.Body>
                         </div>
                         <Modal.Footer>
-                          <Button
-                              className="modal-button-forgots"
-                              onClick={handleClose}>
-                            Return to Login
-                          </Button>
+                          <button className="reset-modal-button" onClick={handleClose}>
+                            Try Again
+                          </button>
                         </Modal.Footer>
                       </div>
                     </div>

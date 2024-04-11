@@ -1,9 +1,8 @@
 import React from 'react'
-import FlightSelectionTwo from "../Components/FlightSelectionTwoPage/FlightSelectionTwo.jsx";
 
 function FlightSelectionTwoPage() {
   return (
-    <FlightSelectionTwo/>
+    <div>FlightSelectionTwoPage</div>
   )
 }
 

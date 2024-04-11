@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+/* General styles */
+/*.body {*/
+/*    font-family: 'Lato';*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+.modal-cancel {
+    font-family: 'Lato';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: auto;
+}
+
+.cancel-modal-content {
+    background-color: #FCFCFD;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 544px;
+    position: absolute;
+    height: 342px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.close-cancelB {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Apply transition for smooth hover effect */
+}
+.close-cancelB:hover {
+    transform: scale(1.2); /* Increase scale on hover */
+}
+
+.message-cancel {
+    font-size: 35px; /* Adjust font size */
+    font-weight: bold; /* Adjust font thickness */
+}
+
+.cancel-modal-icon {
+    margin-top: 40px;
+    background: #EFF8FF;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.cancel-description {
+    font-size: 18px; /* Adjust font size */
+    font-weight: normal; /* Adjust font thickness */
+    color: black;
+    margin-top: -2rem;
+
+}
+
+.cancel-button-container {
+    margin-top: -1rem;
+    position: page;
+    display: flex;
+margin-left: 8rem;
+}
+
+.cancel-button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirmBtn-cancel {
+    background-color: green;
+    color: white;
+    width: 7rem
+}
+
+
+.cancelBtn-cancel {
+    background-color: red;
+    color: white;
+    width: 7rem
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .cancel-modal-content{
+        width: 90%;
+    }
+
+    .cancel-button-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
