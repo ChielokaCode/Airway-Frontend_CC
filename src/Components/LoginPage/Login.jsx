@@ -50,9 +50,11 @@ function Login() {
       const decodedToken = jwtDecode(token);
       const userRole = decodedToken.role;
       const userFirstName = decodedToken.firstName;
+      const userId= decodedToken.id;
       localStorage.setItem("jwtToken", token);
       localStorage.setItem("userRole", JSON.stringify(userRole));
       localStorage.setItem("userFirstName", JSON.stringify(userFirstName))
+      localStorage.setItem("userId", JSON.stringify(userId))
       console.log(userRole);
 
       setShowModal(true);

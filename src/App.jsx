@@ -17,6 +17,9 @@ import DeleteModalPage from "./Pages/DeleteModalPage.jsx";
 import ManageBooking from "./Pages/ManageBooking.jsx";
 import AdminUserManagementPage from "./Pages/AdminUserManagementPage.jsx";
 import EditFlightPage from "./Pages/EditFlightPage.jsx";
+import UserProfilePage from "./Pages/UserProfilePage.jsx";
+import EditUserPage from "./Pages/EditUserPage.jsx";
+import AboutUsPage from "./Pages/AboutUsPage.jsx";
 
 function App() {
   return (
@@ -40,6 +43,9 @@ function App() {
           <Route exact path="/flight-booking" element={<ManageBooking />} />
           <Route exact path="/passenger" element={<AdminUserManagementPage />} />
           <Route exact path="/edit-flight/:flightId" element={<EditFlightPage/>}/>
+          <Route exact path="/user-profile" element={<UserProfilePage/>}/>
+          <Route exact path="/edit-profile" element={<EditUserPage/>}/>
+          <Route exact path="/about" element={<AboutUsPage/>}/>
 
         </Routes>
       </Router>

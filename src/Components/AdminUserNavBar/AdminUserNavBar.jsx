@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import ModalFilter from '../ModalFilter/ModalFilter';
 import filterIcon from "/src/assets/filter-icon.png"
 import bellIcon from  "/src/assets/bellNotifImg.svg"
+import axios from "axios";
+import {toast} from "react-toastify";
 const AdminUserNavBar = () => {
     const [searchText, setSearchText] = useState('');
     const [isFilterOpen, setFilterOpen] = useState(false);
@@ -48,18 +50,25 @@ const AdminUserNavBar = () => {
         setSearchText(query);
     };
 
-    const logout = async () => {
+    const logout = async (e) => {
+        e.preventDefault();
         try {
-            const response = await fetch('http://localhost:8080/api/v1/auth/logout', {
-                method: 'POST',
-            });
-            if (!response.ok) {
-                throw new Error('Logout request failed');
-            }
-            console.log('Logged out successfully');
+            const response = await axios.post('http://localhost:8080/api/v1/auth/logout');
+
+            toast(`Logout successful`)
+            localStorage.removeItem("user");
+            localStorage.removeItem("userFirstName");
+            localStorage.removeItem("userRole");
+            localStorage.clear();
+            sessionStorage.clear();
             navigate('/');
         } catch (error) {
             console.error('Error during logout:', error.message);
+            const errorMessage =
+                error.response?.data?.message ||
+                "An error occurred in the process. Please try again.";
+            toast.error(errorMessage);
+
         }
     };
 

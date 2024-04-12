@@ -78,6 +78,7 @@ function ManageBooking({isLoggedOut}) {
       localStorage.removeItem("userFirstName");
       localStorage.removeItem("userRole");
       localStorage.clear();
+      sessionStorage.clear();
       navigate('/');
     } catch (error) {
       console.error('Error during logout:', error.message);

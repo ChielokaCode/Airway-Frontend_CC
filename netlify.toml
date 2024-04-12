@@ -1,4 +1,39 @@
+# Netlify configuration
+
+# Redirects section
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
+force = true  # Ensures the redirect is always applied
+
+# Headers section
+[headers]
+[[headers.values]]
+path = "/index.html"
+# Set caching headers for the main index.html file
+cache-control = "no-cache"
+
+[[headers.values]]
+path = "/assets/*"
+# Set caching headers for static assets (adjust max-age as appropriate for your use case)
+cache-control = "public, max-age=31536000"
+
+# Caching section
+[cache]
+# Define caching rules for different types of files
+[[cache]]
+path = "/*"
+# Set appropriate caching for the root and other pages (adjust max-age as appropriate)
+cache-control = "public, max-age=0"
+
+[[cache]]
+path = "/assets/*"
+# Cache static assets
+cache-control = "public, max-age=31536000"
+
+# Build section
+[build]
+# Define your build command and publish directory
+command = "npm run build"
+publish = "dist"  # Adjust according to your build process and directory structure

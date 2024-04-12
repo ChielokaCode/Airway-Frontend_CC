@@ -33,6 +33,7 @@ const FlightListing = () => {
     const [loading, setLoading] = useState(true);
     const [filteredFlights, setFilteredFlights] = useState([]);
     const [totalPages, setTotalPages] = useState(0);
+    const getFirstThreeLetters = (str) => str ? str.slice(0, 3) : '';
 
 
 
@@ -195,6 +196,7 @@ const FlightListing = () => {
             localStorage.removeItem("userFirstName");
             localStorage.removeItem("userRole");
             localStorage.clear();
+            sessionStorage.clear();
             navigate('/');
         } catch (error) {
             console.error('Error during logout:', error.message);
@@ -425,12 +427,13 @@ const FlightListing = () => {
                                                         <h6>Baggage Allowance: {classItem.baggageAllowance}</h6>
                                                     </div>
                                                     <div className='content-passengers-bookeds'>
-                                                        <h2 className='passengers-classesss'>Passengers</h2>
-                                                        <table className="my-tables">
+                                                        <h2 className='passengers-classesss'>
+                                                            {classItem.pnrList.length > 0 ? "Passengers" : "No Passengers"}</h2>
+                                                        <table style={{opacity: classItem.pnrList.length > 0 ? "1" : "0"}} className="my-tables">
                                                             <thead>
                                                             <tr>
                                                                 <th>PSN</th>
-                                                                <th>Passenger Code</th>
+                                                                <th>Booking Reference</th>
                                                                 <th>PNR</th>
                                                                 <th>Passenger Type</th>
                                                                 <th>Title</th>
@@ -443,20 +446,33 @@ const FlightListing = () => {
                                                             </thead>
                                                             <tbody>
                                                             {classItem.pnrList.map((pnrItem, pnrIndex) => (
-                                                                pnrItem.passengerList.map((passenger, passengerIndex) => (
-                                                                    <tr key={passengerIndex}>
-                                                                        <td>{passenger.psn}</td>
-                                                                        <td>{passenger.passengerCode}</td>
-                                                                        <td>{pnrItem.pnrcode}</td>
-                                                                        <td>{passenger.category}</td>
-                                                                        <td>{passenger.title}</td>
-                                                                        <td>{passenger.firstName}</td>
-                                                                        <td>{passenger.lastName}</td>
-                                                                        <td>{passenger.seat[passengerIndex]?.seatLabel}</td>
-                                                                        <td>{classItem.baggageAllowance}</td>
-                                                                        <td>{passenger.tickets[passengerIndex]?.ticketNo}</td>
-                                                                    </tr>
-                                                                ))
+                                                                pnrItem.passengerList.map((passenger, passengerIndex) => {
+                                                                    let ticketToDisplay = '-';
+                                                                    let ticketToDisplayIndex = -1;
+                                                                    passenger.tickets.forEach((ticket, ticketIndex) => {
+                                                                        const ticketFirstThreeLetters = getFirstThreeLetters(ticket.ticketNo);
+                                                                        if (ticketFirstThreeLetters === flight?.departurePort.iataCode) {
+                                                                            ticketToDisplay = ticket.ticketNo;
+                                                                            ticketToDisplayIndex = ticketIndex;
+
+                                                                        }
+                                                                    });
+
+                                                                    return (
+                                                                        <tr key={passengerIndex}>
+                                                                            <td>{passenger.psn}</td>
+                                                                            <td>{passenger.bookingRef}</td>
+                                                                            <td>{pnrItem.pnrcode}</td>
+                                                                            <td>{passenger.category}</td>
+                                                                            <td>{passenger.title}</td>
+                                                                            <td>{passenger.firstName}</td>
+                                                                            <td>{passenger.lastName}</td>
+                                                                            <td>{passenger.seat[ticketToDisplayIndex]?.seatLabel}</td>
+                                                                            <td>{classItem.baggageAllowance}</td>
+                                                                            <td>{ticketToDisplay}</td>
+                                                                        </tr>
+                                                                    );
+                                                                })
                                                             ))}
                                                             </tbody>
                                                         </table>
@@ -485,12 +501,13 @@ const FlightListing = () => {
                                                         <h6>Baggage Allowance: {classItem.baggageAllowance}</h6>
                                                     </div>
                                                     <div className='content-passengers-bookeds'>
-                                                        <h2 className='passengers-classesss'>Passengers</h2>
-                                                        <table className="my-tables">
+                                                        <h2 className='passengers-classesss'>
+                                                            {classItem.pnrList.length > 0 ? "Passengers" : "No Passengers"}</h2>
+                                                        <table style={{opacity: classItem.pnrList.length > 0 ? "1" : "0"}} className="my-tables">
                                                             <thead>
                                                             <tr>
                                                                 <th>PSN</th>
-                                                                <th>Passenger Code</th>
+                                                                <th>Booking Reference</th>
                                                                 <th>PNR</th>
                                                                 <th>Passenger Type</th>
                                                                 <th>Title</th>
@@ -503,20 +520,33 @@ const FlightListing = () => {
                                                             </thead>
                                                             <tbody>
                                                             {classItem.pnrList.map((pnrItem, pnrIndex) => (
-                                                                pnrItem.passengerList.map((passenger, passengerIndex) => (
-                                                                    <tr key={passengerIndex}>
-                                                                        <td>{passenger.psn}</td>
-                                                                        <td>{passenger.passengerCode}</td>
-                                                                        <td>{pnrItem.pnrcode}</td>
-                                                                        <td>{passenger.category}</td>
-                                                                        <td>{passenger.title}</td>
-                                                                        <td>{passenger.firstName}</td>
-                                                                        <td>{passenger.lastName}</td>
-                                                                        <td>{passenger.seat[passengerIndex]?.seatLabel}</td>
-                                                                        <td>{classItem.baggageAllowance}</td>
-                                                                        <td>{passenger.tickets[passengerIndex]?.ticketNo}</td>
-                                                                    </tr>
-                                                                ))
+                                                                pnrItem.passengerList.map((passenger, passengerIndex) => {
+                                                                    let ticketToDisplay = '-';
+                                                                    let ticketToDisplayIndex = -1;
+                                                                    passenger.tickets.forEach((ticket, ticketIndex) => {
+                                                                        const ticketFirstThreeLetters = getFirstThreeLetters(ticket.ticketNo);
+                                                                        if (ticketFirstThreeLetters === flight?.departurePort.iataCode) {
+                                                                            ticketToDisplay = ticket.ticketNo;
+                                                                            ticketToDisplayIndex = ticketIndex;
+
+                                                                        }
+                                                                    });
+
+                                                                    return (
+                                                                        <tr key={passengerIndex}>
+                                                                            <td>{passenger.psn}</td>
+                                                                            <td>{passenger.bookingRef}</td>
+                                                                            <td>{pnrItem.pnrcode}</td>
+                                                                            <td>{passenger.category}</td>
+                                                                            <td>{passenger.title}</td>
+                                                                            <td>{passenger.firstName}</td>
+                                                                            <td>{passenger.lastName}</td>
+                                                                            <td>{passenger.seat[ticketToDisplayIndex]?.seatLabel}</td>
+                                                                            <td>{classItem.baggageAllowance}</td>
+                                                                            <td>{ticketToDisplay}</td>
+                                                                        </tr>
+                                                                    );
+                                                                })
                                                             ))}
                                                             </tbody>
                                                         </table>
@@ -546,12 +576,13 @@ const FlightListing = () => {
                                                     </div>
 
                                                     <div className='content-passengers-bookeds'>
-                                                        <h2 className='passengers-classesss'>Passengers</h2>
-                                                        <table className="my-tables">
+                                                        <h2 className='passengers-classesss'>
+                                                            {classItem.pnrList.length > 0 ? "Passengers" : "No Passengers"}</h2>
+                                                        <table style={{opacity: classItem.pnrList.length > 0 ? "1" : "0"}} className="my-tables">
                                                             <thead>
                                                             <tr>
                                                                 <th>PSN</th>
-                                                                <th>Passenger Code</th>
+                                                                <th>Booking Reference</th>
                                                                 <th>PNR</th>
                                                                 <th>Passenger Type</th>
                                                                 <th>Title</th>
@@ -564,20 +595,33 @@ const FlightListing = () => {
                                                             </thead>
                                                             <tbody>
                                                             {classItem.pnrList.map((pnrItem, pnrIndex) => (
-                                                                pnrItem.passengerList.map((passenger, passengerIndex) => (
-                                                                    <tr key={passengerIndex}>
-                                                                        <td>{passenger.psn}</td>
-                                                                        <td>{passenger.passengerCode}</td>
-                                                                        <td>{pnrItem.pnrcode}</td>
-                                                                        <td>{passenger.category}</td>
-                                                                        <td>{passenger.title}</td>
-                                                                        <td>{passenger.firstName}</td>
-                                                                        <td>{passenger.lastName}</td>
-                                                                        <td>{passenger.seat[passengerIndex]?.seatLabel}</td>
-                                                                        <td>{classItem.baggageAllowance}</td>
-                                                                        <td>{passenger.tickets[passengerIndex]?.ticketNo}</td>
-                                                                    </tr>
-                                                                ))
+                                                                pnrItem.passengerList.map((passenger, passengerIndex) => {
+                                                                    let ticketToDisplay = '-';
+                                                                    let ticketToDisplayIndex = -1;
+                                                                    passenger.tickets.forEach((ticket, ticketIndex) => {
+                                                                        const ticketFirstThreeLetters = getFirstThreeLetters(ticket.ticketNo);
+                                                                        if (ticketFirstThreeLetters === flight?.departurePort.iataCode) {
+                                                                            ticketToDisplay = ticket.ticketNo;
+                                                                            ticketToDisplayIndex = ticketIndex;
+
+                                                                        }
+                                                                    });
+
+                                                                    return (
+                                                                        <tr key={passengerIndex}>
+                                                                            <td>{passenger.psn}</td>
+                                                                            <td>{passenger.bookingRef}</td>
+                                                                            <td>{pnrItem.pnrcode}</td>
+                                                                            <td>{passenger.category}</td>
+                                                                            <td>{passenger.title}</td>
+                                                                            <td>{passenger.firstName}</td>
+                                                                            <td>{passenger.lastName}</td>
+                                                                            <td>{passenger.seat[ticketToDisplayIndex]?.seatLabel}</td>
+                                                                            <td>{classItem.baggageAllowance}</td>
+                                                                            <td>{ticketToDisplay}</td>
+                                                                        </tr>
+                                                                    );
+                                                                })
                                                             ))}
                                                             </tbody>
                                                         </table>
@@ -593,9 +637,9 @@ const FlightListing = () => {
                             </div>
 
 
-                        )):
+                            )) :
                             // for flightList array
-                            flightList.map((flight, index)=> (
+                            flightList.map((flight, index) => (
 
                                 <div key={index} className="items">
                                     <div className='titles'>
@@ -689,12 +733,13 @@ const FlightListing = () => {
                                                             <h6>Baggage Allowance: {classItem.baggageAllowance}</h6>
                                                         </div>
                                                         <div className='content-passengers-bookeds'>
-                                                            <h2 className='passengers-classesss'>Passengers</h2>
-                                                            <table className="my-tables">
+                                                            <h2 className='passengers-classesss'>
+                                                                {classItem.pnrList.length > 0 ? "Passengers" : "No Passengers"}</h2>
+                                                            <table style={{opacity: classItem.pnrList.length > 0 ? "1" : "0"}} className="my-tables">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>PSN</th>
-                                                                    <th>Passenger Code</th>
+                                                                    <th>Booking Reference</th>
                                                                     <th>PNR</th>
                                                                     <th>Passenger Type</th>
                                                                     <th>Title</th>
@@ -707,20 +752,33 @@ const FlightListing = () => {
                                                                 </thead>
                                                                 <tbody>
                                                                 {classItem.pnrList.map((pnrItem, pnrIndex) => (
-                                                                    pnrItem.passengerList.map((passenger, passengerIndex) => (
-                                                                        <tr key={passengerIndex}>
-                                                                            <td>{passenger.psn}</td>
-                                                                            <td>{passenger.passengerCode}</td>
-                                                                            <td>{pnrItem.pnrcode}</td>
-                                                                            <td>{passenger.category}</td>
-                                                                            <td>{passenger.title}</td>
-                                                                            <td>{passenger.firstName}</td>
-                                                                            <td>{passenger.lastName}</td>
-                                                                            <td>{passenger.seat[passengerIndex]?.seatLabel}</td>
-                                                                            <td>{classItem.baggageAllowance}</td>
-                                                                            <td>{passenger.tickets[passengerIndex]?.ticketNo}</td>
-                                                                        </tr>
-                                                                    ))
+                                                                    pnrItem.passengerList.map((passenger, passengerIndex) => {
+                                                                        let ticketToDisplay = '-';
+                                                                        let ticketToDisplayIndex = -1;
+                                                                        passenger.tickets.forEach((ticket, ticketIndex) => {
+                                                                            const ticketFirstThreeLetters = getFirstThreeLetters(ticket.ticketNo);
+                                                                            if (ticketFirstThreeLetters === flight?.departurePort.iataCode) {
+                                                                                ticketToDisplay = ticket.ticketNo;
+                                                                                ticketToDisplayIndex = ticketIndex;
+
+                                                                            }
+                                                                        });
+
+                                                                        return (
+                                                                            <tr key={passengerIndex}>
+                                                                                <td>{passenger.psn}</td>
+                                                                                <td>{passenger.bookingRef}</td>
+                                                                                <td>{pnrItem.pnrcode}</td>
+                                                                                <td>{passenger.category}</td>
+                                                                                <td>{passenger.title}</td>
+                                                                                <td>{passenger.firstName}</td>
+                                                                                <td>{passenger.lastName}</td>
+                                                                                <td>{passenger.seat[ticketToDisplayIndex]?.seatLabel}</td>
+                                                                                <td>{classItem.baggageAllowance}</td>
+                                                                                <td>{ticketToDisplay}</td>
+                                                                            </tr>
+                                                                        );
+                                                                    })
                                                                 ))}
                                                                 </tbody>
                                                             </table>
@@ -735,10 +793,13 @@ const FlightListing = () => {
                                                          className={toggle === 2 ? 'show-content-classess' : 'content-classess'}>
                                                         <div className='content-detailss'>
                                                             <div className='left-sides'>
-                                                                <h6>Number of Seats: {classItem.seat.totalNumberOfSeat}</h6>
+                                                                <h6>Number of
+                                                                    Seats: {classItem.seat.totalNumberOfSeat}</h6>
                                                                 <h6>Seat Code: {classItem.seat.seatAlphabet}</h6>
-                                                                <h6>Occupied Seats: {classItem.seat.noOfOccupiedSeats}</h6>
-                                                                <h6>Un-Occupied Seats: {classItem.seat.availableSeat}</h6>
+                                                                <h6>Occupied
+                                                                    Seats: {classItem.seat.noOfOccupiedSeats}</h6>
+                                                                <h6>Un-Occupied
+                                                                    Seats: {classItem.seat.availableSeat}</h6>
                                                             </div>
                                                             <div className='right-sides'>
                                                                 <h6>Surcharge: {classItem.surchargeFee}</h6>
@@ -749,12 +810,13 @@ const FlightListing = () => {
                                                             <h6>Baggage Allowance: {classItem.baggageAllowance}</h6>
                                                         </div>
                                                         <div className='content-passengers-bookeds'>
-                                                            <h2 className='passengers-classesss'>Passengers</h2>
-                                                            <table className="my-tables">
+                                                            <h2 className='passengers-classesss'>
+                                                                {classItem.pnrList.length > 0 ? "Passengers" : "No Passengers"}</h2>
+                                                            <table style={{opacity: classItem.pnrList.length > 0 ? "1" : "0"}} className="my-tables">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>PSN</th>
-                                                                    <th>Passenger Code</th>
+                                                                    <th>Booking Reference</th>
                                                                     <th>PNR</th>
                                                                     <th>Passenger Type</th>
                                                                     <th>Title</th>
@@ -767,20 +829,33 @@ const FlightListing = () => {
                                                                 </thead>
                                                                 <tbody>
                                                                 {classItem.pnrList.map((pnrItem, pnrIndex) => (
-                                                                    pnrItem.passengerList.map((passenger, passengerIndex) => (
-                                                                        <tr key={passengerIndex}>
-                                                                            <td>{passenger.psn}</td>
-                                                                            <td>{passenger.passengerCode}</td>
-                                                                            <td>{pnrItem.pnrcode}</td>
-                                                                            <td>{passenger.category}</td>
-                                                                            <td>{passenger.title}</td>
-                                                                            <td>{passenger.firstName}</td>
-                                                                            <td>{passenger.lastName}</td>
-                                                                            <td>{passenger.seat[passengerIndex]?.seatLabel}</td>
-                                                                            <td>{classItem.baggageAllowance}</td>
-                                                                            <td>{passenger.tickets[passengerIndex]?.ticketNo}</td>
-                                                                        </tr>
-                                                                    ))
+                                                                    pnrItem.passengerList.map((passenger, passengerIndex) => {
+                                                                        let ticketToDisplay = '-';
+                                                                        let ticketToDisplayIndex = -1;
+                                                                        passenger.tickets.forEach((ticket, ticketIndex) => {
+                                                                            const ticketFirstThreeLetters = getFirstThreeLetters(ticket.ticketNo);
+                                                                            if (ticketFirstThreeLetters === flight?.departurePort.iataCode) {
+                                                                                ticketToDisplay = ticket.ticketNo;
+                                                                                ticketToDisplayIndex = ticketIndex;
+
+                                                                            }
+                                                                        });
+
+                                                                        return (
+                                                                            <tr key={passengerIndex}>
+                                                                                <td>{passenger.psn}</td>
+                                                                                <td>{passenger.bookingRef}</td>
+                                                                                <td>{pnrItem.pnrcode}</td>
+                                                                                <td>{passenger.category}</td>
+                                                                                <td>{passenger.title}</td>
+                                                                                <td>{passenger.firstName}</td>
+                                                                                <td>{passenger.lastName}</td>
+                                                                                <td>{passenger.seat[ticketToDisplayIndex]?.seatLabel}</td>
+                                                                                <td>{classItem.baggageAllowance}</td>
+                                                                                <td>{ticketToDisplay}</td>
+                                                                            </tr>
+                                                                        );
+                                                                    })
                                                                 ))}
                                                                 </tbody>
                                                             </table>
@@ -795,10 +870,13 @@ const FlightListing = () => {
                                                          className={toggle === 3 ? 'show-content-classess' : 'content-classess'}>
                                                         <div className='content-detailss'>
                                                             <div className='left-sides'>
-                                                                <h6>Number of Seats: {classItem.seat.totalNumberOfSeat}</h6>
+                                                                <h6>Number of
+                                                                    Seats: {classItem.seat.totalNumberOfSeat}</h6>
                                                                 <h6>Seat Code: {classItem.seat.seatAlphabet}</h6>
-                                                                <h6>Occupied Seats: {classItem.seat.noOfOccupiedSeats}</h6>
-                                                                <h6>Un-Occupied Seats: {classItem.seat.availableSeat}</h6>
+                                                                <h6>Occupied
+                                                                    Seats: {classItem.seat.noOfOccupiedSeats}</h6>
+                                                                <h6>Un-Occupied
+                                                                    Seats: {classItem.seat.availableSeat}</h6>
                                                             </div>
                                                             <div className='right-sides'>
                                                                 <h6>Surcharge: {classItem.surchargeFee}</h6>
@@ -810,12 +888,14 @@ const FlightListing = () => {
                                                         </div>
 
                                                         <div className='content-passengers-bookeds'>
-                                                            <h2 className='passengers-classesss'>Passengers</h2>
-                                                            <table className="my-tables">
+
+                                                            <h2 className='passengers-classesss'>
+                                                                {classItem.pnrList.length > 0 ? "Passengers" : "No Passengers"}</h2>
+                                                            <table style={{opacity: classItem.pnrList.length > 0 ? "1" : "0"}} className="my-tables">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>PSN</th>
-                                                                    <th>Passenger Code</th>
+                                                                    <th>Booking Reference</th>
                                                                     <th>PNR</th>
                                                                     <th>Passenger Type</th>
                                                                     <th>Title</th>
@@ -828,20 +908,33 @@ const FlightListing = () => {
                                                                 </thead>
                                                                 <tbody>
                                                                 {classItem.pnrList.map((pnrItem, pnrIndex) => (
-                                                                    pnrItem.passengerList.map((passenger, passengerIndex) => (
-                                                                        <tr key={passengerIndex}>
-                                                                            <td>{passenger.psn}</td>
-                                                                            <td>{passenger.passengerCode}</td>
-                                                                            <td>{pnrItem.pnrcode}</td>
-                                                                            <td>{passenger.category}</td>
-                                                                            <td>{passenger.title}</td>
-                                                                            <td>{passenger.firstName}</td>
-                                                                            <td>{passenger.lastName}</td>
-                                                                            <td>{passenger.seat[passengerIndex]?.seatLabel}</td>
-                                                                            <td>{classItem.baggageAllowance}</td>
-                                                                            <td>{passenger.tickets[passengerIndex]?.ticketNo}</td>
-                                                                        </tr>
-                                                                    ))
+                                                                    pnrItem.passengerList.map((passenger, passengerIndex) => {
+                                                                        let ticketToDisplay = '-';
+                                                                        let ticketToDisplayIndex = -1;
+                                                                        passenger.tickets.forEach((ticket, ticketIndex) => {
+                                                                            const ticketFirstThreeLetters = getFirstThreeLetters(ticket.ticketNo);
+                                                                            if (ticketFirstThreeLetters === flight?.departurePort.iataCode) {
+                                                                                ticketToDisplay = ticket.ticketNo;
+                                                                                ticketToDisplayIndex = ticketIndex;
+
+                                                                            }
+                                                                        });
+
+                                                                        return (
+                                                                            <tr key={passengerIndex}>
+                                                                                <td>{passenger.psn}</td>
+                                                                                <td>{passenger.bookingRef}</td>
+                                                                                <td>{pnrItem.pnrcode}</td>
+                                                                                <td>{passenger.category}</td>
+                                                                                <td>{passenger.title}</td>
+                                                                                <td>{passenger.firstName}</td>
+                                                                                <td>{passenger.lastName}</td>
+                                                                                <td>{passenger.seat[ticketToDisplayIndex]?.seatLabel}</td>
+                                                                                <td>{classItem.baggageAllowance}</td>
+                                                                                <td>{ticketToDisplay}</td>
+                                                                            </tr>
+                                                                        );
+                                                                    })
                                                                 ))}
                                                                 </tbody>
                                                             </table>

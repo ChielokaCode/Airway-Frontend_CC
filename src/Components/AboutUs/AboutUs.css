@@ -1,0 +1,77 @@
+.about-us {
+    text-align: center;
+    padding: 40px 20px; /* Increased padding */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.tabs button.active {
+    color: #fff;
+    background-color: #2D9CDB;
+    border-radius: 5px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px; /* Increased margin-top */
+}
+
+.team-member {
+    margin: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 60px; /* Increased border-radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Enhanced box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.team-member:hover {
+    transform: translateY(-8px); /* Increased lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Enhanced box shadow on hover */
+}
+
+.team-member img {
+    width: 200px; /* Increased image size */
+    height: 200px; /* Increased image size */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member-details {
+    margin-top: 10px; /* Reduced margin-top */
+}
+
+.h3-about {
+    margin-bottom: 3px; /* Reduced margin-bottom */
+    color: #444;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.p-about {
+    color: #666;
+    font-size: 1rem; /* Reduced font size */
+    line-height: 1.4; /* Adjusted line height */
+}
+
+.h2-about {
+    margin-bottom: 50px; /* Reduced margin-bottom */
+    color: #000000;
+    font-size: 3rem; /* Increased font size */
+}
