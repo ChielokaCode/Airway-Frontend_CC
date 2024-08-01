@@ -1,8 +1,42 @@
-# React + Vite
+# Airway
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Airway is a flight Management System built with React js, CSS on the frontend and Java Springboot, MySql on the backend. It consists of an Admin dashboard having specified permissions to create, edit, remove flights and access the database .A Passenger dashboard to manage booked flights, cancel flight, search available flights to and fro a location and book as many tickets as they want
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#Installation)
+  - [Client](#Client)
+  - [Server](#Server)
+
+## Installation
+
+### Client
+
+1. Navigate to the `client` directory.
+
+```bash
+cd client
+```
+
+2. Install the required react dependencies through.
+
+```bash
+npm create vite@latest airway-frontend
+npm install
+```
+
+3. Run the frontend server.
+
+```bash
+npm run dev
+```
+
+
+### Server
+
+1. Navigate to the `server` directory on the other repo below
+[Airway-backend](https://github.com/ChielokaCode/Airway-Java)
+
+2 Run springboot project
+
+3. Run the backend server.
